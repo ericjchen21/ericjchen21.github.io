@@ -3,7 +3,7 @@ layout: base
 title: Home
 ---
 
-Website
+I made a change
 
 <!-- <!DOCTYPE html>
 <html lang="en">
