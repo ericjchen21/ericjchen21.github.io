@@ -34,23 +34,3 @@ body strong,
 footer {
   color: var(--bs-primary) !important;
 }
-
-/* 2. Your Custom Overrides */
-/* Since this is SASS, you can use nesting! */
-.navbar {
-  background-color: var(--bs-body-bg);
-}
-
-/* 3. Override specific Bootstrap quirks */
-body .btn-primary {
-  /* Using 'body' adds specificity to override Bootstrap default if needed */
-  border-radius: 0;
-}
-
-/* Offcanvas close button: use primary font color for the icon */
-.offcanvas .btn-close {
-  /* Bootstrap's close SVG uses currentColor, so setting color updates the icon */
-  color: var(--bs-primary) !important;
-  opacity: 1 !important;
-  filter: none !important;
-}
