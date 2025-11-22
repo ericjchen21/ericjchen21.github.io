@@ -1,0 +1,136 @@
+.MY-CUSTOM-BUTTON {
+  width: 30px;
+  height: 30px;
+  stroke: $text-color;
+}
+
+.site-header {
+  @include clear-all;
+  position: relative;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin: 0 auto;
+  }
+
+  // 1. Brand Styling
+  .site-title {
+    // font-size: 1.5rem;
+    // font-weight: bold;
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  // 2. Desktop Nav Styling
+  .desktop-nav {
+    display: none; // Hidden by default (mobile-first approach)
+
+    @media (min-width: $mobile-breakpoint) {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .page-link {
+      text-decoration: none;
+      color: $text-color;
+      // font-weight: 500;
+
+      // &:hover {
+      //   color: $accent-color;
+      // }
+    }
+  }
+
+  // 3. Mobile Trigger Styling
+  .mobile-nav {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: $text-color;
+    display: block;
+
+    @media (min-width: $mobile-breakpoint) {
+      display: none; // Hide on desktop
+    }
+  }
+}
+
+// 4. Mobile Sidebar Styling
+.mobile-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+
+  /* 1. Lower the opacity slightly so the blur is more visible */
+  background: rgba(0, 0, 0, 0.3);
+
+  /* 2. The Magic Line */
+  backdrop-filter: blur(5px);
+
+  /* 3. Safari Support (needed for older iPhones) */
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: $sidebar-width;
+  height: 100vh;
+  background: $bg-color;
+  z-index: 999;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+
+  // Transitions for Alpine (Optional helper class if not using utility classes)
+  &.transition-transform {
+    transition: transform 0.3s ease-in-out;
+  }
+  &.translate-x-full {
+    transform: translateX(100%);
+  }
+  &.translate-x-0 {
+    transform: translateX(0);
+  }
+
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin-bottom: 2rem;
+
+    .sidebar-title {
+      font-weight: bold;
+      // font-size: 1.2rem;
+    }
+
+    button {
+      @include clear-all;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .sidebar-links {
+    display: flex;
+    flex-direction: column;
+    // gap: 1.5rem;
+
+    a {
+      text-decoration: none;
+      color: $text-color;
+      font-size: 1.1rem;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}

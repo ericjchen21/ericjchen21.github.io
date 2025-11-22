@@ -1,0 +1,73 @@
+<header class="site-header" x-data="{ open: false }">
+  <div class="header-wrapper">
+    <a class="site-title" href="{{ '/' | relative_url }}"> Brand Name </a>
+
+    <nav class="desktop-nav">
+      <a href="{{ '/about' | relative_url }}" class="page-link">About</a>
+      <a href="{{ '/projects' | relative_url }}" class="page-link">Projects</a>
+      <a href="{{ '/blog' | relative_url }}" class="page-link">Blog</a>
+      <a href="{{ '/contact' | relative_url }}" class="page-link">Contact</a>
+    </nav>
+
+    <button class="mobile-nav" @click="open = !open" aria-label="Toggle menu">
+
+      <svg 
+        id="mobile-nav-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6 MY-CUSTOM-BUTTON"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg
+
+    </button>
+  </div>
+
+  <div
+    class="mobile-backdrop"
+    x-show="open"
+    x-transition.opacity
+    @click="open = false"
+    style="display: none"
+  ></div>
+
+  <nav
+    class="mobile-sidebar"
+    x-show="open"
+    x-transition:enter="transition-transform"
+    x-transition:enter-start="translate-x-full"
+    x-transition:enter-end="translate-x-0"
+    x-transition:leave="transition-transform"
+    x-transition:leave-start="translate-x-0"
+    x-transition:leave-end="translate-x-full"
+    style="display: none"
+  >
+    <div class="sidebar-header">
+      <span class="sidebar-title">Menu</span>
+      <button @click="open = false" aria-label="Close menu">
+        
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6 MY-CUSTOM-BUTTON"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+
+      </button>
+    </div>
+
+    <div class="sidebar-links">
+      <a href="{{ '/about' | relative_url }}">About</a>
+      <a href="{{ '/projects' | relative_url }}">Projects</a>
+      <a href="{{ '/blog' | relative_url }}">Blog</a>
+      <a href="{{ '/contact' | relative_url }}">Contact</a>
+    </div>
+  </nav>
+</header>
