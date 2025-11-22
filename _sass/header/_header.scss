@@ -4,10 +4,6 @@
   background-color: var(--bs-body-bg);
 }
 
-.offcanvas-header {
-  display: flex;
-}
-
 .navbar-toggler {
   border: none;
   outline: none;
@@ -15,7 +11,11 @@
   color: var(--bs-primary);
 }
 
-.my-custom-icon {
+.offcanvas-header {
+  display: flex;
+}
+
+.MY-CUSTOM-ICON {
   width: 30px;
   height: 30px;
 }
@@ -34,4 +34,3 @@ button {
   outline: none;
   box-shadow: none;
 }
-
