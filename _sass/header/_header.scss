@@ -27,7 +27,7 @@
   .desktop-nav {
     display: none; // Hidden by default (mobile-first approach)
 
-    @media (min-width: --sidebar-width) {
+    @media (min-width: $mobile-breakpoint) {
       display: flex;
       gap: 2rem;
     }
@@ -51,7 +51,7 @@
     color: var(--text-color);
     display: block;
 
-    @media (min-width: var(--mobile-breakpoint)) {
+    @media (min-width: $mobile-breakpoint) {
       display: none; // Hide on desktop
     }
   }
