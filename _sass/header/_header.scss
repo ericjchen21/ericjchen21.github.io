@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
 
-    height: 3rem;
+    height: 5rem;
   }
 
   .page-link {
@@ -25,8 +25,8 @@
     display: inline-flex;
     align-items: center; /* Centers text vertically */
 
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 
     height: 100%;
 
@@ -35,8 +35,8 @@
     }
 
     @media (max-width: $mobile-breakpoint) {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
     }
 
     &:hover {
@@ -53,8 +53,8 @@
     font-size: 1.5rem;
     font-weight: bold;
 
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   // 2. Desktop Nav Styling
@@ -75,8 +75,8 @@
     display: block;
 
     height: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 
     align-items: center; /* Centers text vertically */
 
@@ -142,16 +142,16 @@
       @include clear-all;
       font-weight: bold;
       font-size: 1.5rem;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
 
     button {
       @include clear-all;
       cursor: pointer;
 
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
       height: 100%;
     }
   }
