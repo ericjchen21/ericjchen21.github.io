@@ -18,9 +18,31 @@
     height: 48px;
   }
 
-  .site-title {
+  .page-link {
     text-decoration: none;
     color: var(--text-color);
+
+    display: inline-flex;
+    align-items: center; /* Centers text vertically */
+
+    @media (min-width: $mobile-breakpoint) {
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 100%;
+      justify-content: center; /* Centers text horizontally */
+    }
+
+    &:hover {
+      background-color: darken($bg-color, 10%);
+    }
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   // 2. Desktop Nav Styling
@@ -29,17 +51,7 @@
 
     @media (min-width: $mobile-breakpoint) {
       display: flex;
-      gap: 2rem;
-    }
-
-    .page-link {
-      text-decoration: none;
-      color: var(--text-color);
-      // font-weight: 500;
-
-      // &:hover {
-      //   color: $accent-color;
-      // }
+      height: 100%;
     }
   }
 
