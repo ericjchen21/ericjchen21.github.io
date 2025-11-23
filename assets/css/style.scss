@@ -4,6 +4,7 @@
 $bg-color: #1c1c1c;
 $text-color: #f7f6f2;
 $accent-color: #0000ff;
+$font-size-base: 16px;
 $mobile-breakpoint: 768px;
 $sidebar-width: 250px;
 
@@ -14,16 +15,19 @@ $sidebar-width: 250px;
 }
 
 :root {
-  --bg-color: $bg-color;
-  --text-color: $text-color;
-  --accent-color: $accent-color;
+  --bg-color: #{$bg-color};
+  --text-color: #{$text-color};
+  --accent-color: #{$accent-color};
+  --font-size-base: #{$font-size-base};
   --mobile-breakpoint: #{$mobile-breakpoint};
   --sidebar-width: #{$sidebar-width};
 }
 
 body {
+  @include clear-all;
   background-color: var(--bg-color);
   color: var(--text-color);
+  font-size: var(--font-size-base);
   font-family: IBM Plex Sans, sans-serif;
 }
 

@@ -1,13 +1,8 @@
 <header class="site-header" x-data="{ open: false }">
   <div class="header-wrapper">
-    <a class="site-title" href="{{ '/' | relative_url }}"> Brand Name </a>
+    <a class="site-title" href="{{ '/' | relative_url }}"> Eric Chen </a>
 
-    <nav class="desktop-nav">
-      <a href="{{ '/about' | relative_url }}" class="page-link">About</a>
-      <a href="{{ '/projects' | relative_url }}" class="page-link">Projects</a>
-      <a href="{{ '/blog' | relative_url }}" class="page-link">Blog</a>
-      <a href="{{ '/contact' | relative_url }}" class="page-link">Contact</a>
-    </nav>
+    <nav class="desktop-nav">{% include nav/nav_items.html %}</nav>
 
     <button class="mobile-nav" @click="open = !open" aria-label="Toggle menu">
       <svg
@@ -67,11 +62,6 @@
       </button>
     </div>
 
-    <div class="sidebar-links">
-      <a href="{{ '/about' | relative_url }}">About</a>
-      <a href="{{ '/projects' | relative_url }}">Projects</a>
-      <a href="{{ '/blog' | relative_url }}">Blog</a>
-      <a href="{{ '/contact' | relative_url }}">Contact</a>
-    </div>
+    <div class="sidebar-links">{% include nav/nav_items.html %}</div>
   </nav>
 </header>
