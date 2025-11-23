@@ -9,8 +9,10 @@
   align-items: center;
   // background-color: transparent;
 
+  flex-grow: 1;
+
   .introduction {
-    height: 100%;
+    align-self: stretch;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -32,6 +34,10 @@
         text-decoration: underline;
       }
     }
+  }
+
+  .check-out {
+    font-size: 2rem;
   }
 
   .headshot {
