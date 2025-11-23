@@ -1,7 +1,46 @@
 .banner {
   position: relative;
-  overflow: hidden;
-  background-color: transparent;
+  // overflow: hidden;
+
+  padding: 2rem 5%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  // background-color: transparent;
+
+  .introduction {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .greeting {
+    overflow: visible;
+
+    font-size: 5rem;
+  }
+
+  .occupation {
+    font-size: 2rem;
+
+    .swarthmore-link {
+      text-decoration: none;
+      color: var(--text-color);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .headshot {
+    border-radius: 30%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: 4px solid var(--primary);
+  }
 }
 
 // @media (min-width: 768px) {
@@ -47,33 +86,4 @@
   .hero-image-wrapper {
     justify-content: flex-end;
   }
-}
-
-h1 {
-  font-size: 2.25rem;
-  font-weight: 800;
-  color: var(--dark);
-  line-height: 1.1;
-  letter-spacing: -0.025em;
-  margin-bottom: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  h1 {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  h1 {
-    font-size: 3.75rem;
-  }
-}
-
-.headshot {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border: 4px solid var(--primary);
 }

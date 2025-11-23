@@ -6,6 +6,7 @@
 
 .site-header {
   @include clear-all;
+
   position: relative;
 
   .header-wrapper {
@@ -31,7 +32,7 @@
     height: 100%;
 
     @media (min-width: $mobile-breakpoint) {
-      justify-content: center; /* Centers text horizontally */
+      justify-content: center;
     }
 
     @media (max-width: $mobile-breakpoint) {

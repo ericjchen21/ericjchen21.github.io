@@ -24,6 +24,18 @@ $sidebar-width: 250px;
   --sidebar-width: #{$sidebar-width};
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  @include clear-all;
+}
+
 body {
   @include clear-all;
   background-color: var(--bg-color);
