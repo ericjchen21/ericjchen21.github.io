@@ -1,7 +1,7 @@
 .MY-CUSTOM-BUTTON {
   width: 30px;
   height: 30px;
-  stroke: $text-color;
+  stroke: var(--text-color);
 }
 
 .site-header {
@@ -9,32 +9,32 @@
   position: relative;
 
   .header-wrapper {
+    @include clear-all;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // margin: 0 auto;
   }
 
-  // 1. Brand Styling
   .site-title {
-    // font-size: 1.5rem;
+    font-size: 16px;
     // font-weight: bold;
     text-decoration: none;
-    color: $text-color;
+    color: var(--text-color);
   }
 
   // 2. Desktop Nav Styling
   .desktop-nav {
     display: none; // Hidden by default (mobile-first approach)
 
-    @media (min-width: $mobile-breakpoint) {
+    @media (min-width: --sidebar-width) {
       display: flex;
       gap: 2rem;
     }
 
     .page-link {
       text-decoration: none;
-      color: $text-color;
+      color: var(--text-color);
       // font-weight: 500;
 
       // &:hover {
@@ -48,10 +48,10 @@
     background: none;
     border: none;
     cursor: pointer;
-    color: $text-color;
+    color: var(--text-color);
     display: block;
 
-    @media (min-width: $mobile-breakpoint) {
+    @media (min-width: var(--mobile-breakpoint)) {
       display: none; // Hide on desktop
     }
   }
@@ -80,9 +80,9 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: $sidebar-width;
+  width: var(--sidebar-width);
   height: 100vh;
-  background: $bg-color;
+  background: var(--bg-color);
   z-index: 999;
   padding: 1.5rem;
   display: flex;
@@ -125,11 +125,11 @@
 
     a {
       text-decoration: none;
-      color: $text-color;
+      color: var(--text-color);
       font-size: 1.1rem;
 
       &:hover {
-        color: $accent-color;
+        color: var(--accent-color);
       }
     }
   }
