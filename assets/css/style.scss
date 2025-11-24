@@ -49,7 +49,9 @@ body {
 
 // Your variable imports/definitions usually go here
 
-@import "header/header";
+@import "header";
+
+@import "footer";
 
 @import "home"; // The rest of your CSS...
 

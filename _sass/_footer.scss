@@ -1,0 +1,23 @@
+.footer-section {
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .sec-a {
+    justify-content: start;
+
+    .email {
+      color: var(--text-color);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .sec-b {
+    justify-content: right;
+  }
+}
