@@ -36,6 +36,7 @@
 
       .index-headshot {
         background-color: orange;
+
         display: flex;
 
         img {
@@ -47,7 +48,7 @@
       }
 
       .index-introduction {
-        background-color: blue;
+        background-color: lightblue;
 
         display: flex;
         flex-direction: column;
@@ -82,37 +83,35 @@
 
   .index-navbar {
     background-color: yellow;
+
     display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 1rem;
 
     // padding: 1rem;
 
-    @media (min-width: $mobile-breakpoint) {
-      flex-direction: row;
-      justify-content: center;
-      // gap: 2rem;
+    // @media (min-width: $mobile-breakpoint) {
+    //   flex-direction: row;
+    //   justify-content: center;
+    //   gap: 2rem; vv
+    // }
 
-      // height: 3em;
-    }
-
-    index-my-button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      margin: 1rem;
-      // padding: 0rem 2rem;
+    .index-nav-button {
       height: 3rem;
       width: 6rem;
 
-      border-radius: 20px;
+      border-radius: 1rem 1rem;
       background-color: darken($bg-color, 5%);
-      cursor: pointer;
+      // box-shadow: 0px 0px 20px #000000;
 
       @media (min-width: $mobile-breakpoint) {
         width: 10rem;
+      }
+
+      .index-nav-icon {
+        width: 3rem;
       }
 
       &:hover {
@@ -123,6 +122,11 @@
       a {
         color: inherit;
         text-decoration: var(--text-color);
+      }
+
+      img {
+        height: 1.5rem;
+        width: 1.5rem;
       }
     }
   }
