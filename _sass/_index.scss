@@ -16,6 +16,9 @@
     justify-content: start;
     align-items: center;
 
+    // padding: 1rem;
+    margin: 0rem;
+
     @media (min-width: $mobile-breakpoint) {
       flex-direction: row;
       justify-content: center;
@@ -42,14 +45,19 @@
 
     .index-introduction {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
 
       padding: 1rem;
 
       h1 {
-        font-size: 5rem;
+        font-size: 3rem;
         font-weight: bold;
+
+        @media (min-width: $mobile-breakpoint) {
+          font-size: 5rem;
+        }
       }
 
       // @media (min-width: $mobile-breakpoint) {
@@ -59,41 +67,64 @@
       // }
     }
 
-    .index-navbar {
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: center;
+    // a {
+    //   margin: 0 1rem;
+    //   font-size: 2rem;
+    //   font-weight: bold;
+    //   text-decoration: none;
+    //   color: inherit;
 
-      padding: 1rem;
+    //   &:hover {
+    //     text-decoration: underline;
+    //   }
+    // }
+  }
+}
+.index-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 
-      @media (min-width: $mobile-breakpoint) {
-        flex-direction: row;
-        justify-content: center;
-      }
+  padding: 1rem;
 
-      button {
-        padding: 1rem;
-        background-color: inherit;
-        cursor: pointer;
-        text-decoration: none;
+  @media (min-width: $mobile-breakpoint) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
 
-        // &:hover {
-        //   background-color: darken($primary-color, 10%);
-        // }
-      }
+    // height: 3em;
+  }
 
-      // a {
-      //   margin: 0 1rem;
-      //   font-size: 2rem;
-      //   font-weight: bold;
-      //   text-decoration: none;
-      //   color: inherit;
+  index-my-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-      //   &:hover {
-      //     text-decoration: underline;
-      //   }
-      // }
+    // padding: 0rem 2rem;
+    height: 3rem;
+    width: 6rem;
+
+    border-radius: 20px;
+    background-color: darken($bg-color, 5%);
+    cursor: pointer;
+
+    @media (min-width: $mobile-breakpoint) {
+      width: 10rem;
+    }
+
+    &:hover {
+      background-color: #123524;
+      font-size: 110%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: var(--text-color);
     }
   }
+}
+
+.spacer {
+  height: 3.5rem;
 }
