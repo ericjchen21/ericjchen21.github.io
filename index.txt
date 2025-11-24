@@ -1,38 +1,8 @@
 ---
-layout: blank
+layout: base
 title: Eric Chen - Home
 ---
 
-<div class="index-container">
-  <div class="index-banner">
-    <!-- <div class="index-mobile-headshot"> -->
-    <div class="index-headshot">
-      <img
-        src="assets/images/Headshot Square.jpeg"
-        alt="Eric Chen Profile Picture"
-      />
-    </div>
-    <div class="index-introduction">
-      <h1>
-        Herro
-        <br>
-        I'm Eric
-      </h1>
-    </div>
-  </div>
-  <div class="index-navbar">
-    <button>
-      <a href="projects.html" class="index-nav-link">Projects</a>
-    </button>
-    <button>
-      <a href="projects.html" class="index-nav-link">Projects</a>
-    </button>
-    <button>
-      <a href="projects.html" class="index-nav-link">Projects</a>
-    </button>
-  </div>
-</div>
-    <!--
 <section class="mobile-headshot">
   <img
     src="assets/images/Headshot Square.jpeg"
@@ -49,7 +19,7 @@ title: Eric Chen - Home
           >Swarthmore College</a
       </h2>
     </div>  
-    <div class="sec-b">
+    <!-- <div class="sec-b">
       <h2 class="check-out">
         Check out some 
         <br>
@@ -58,7 +28,7 @@ title: Eric Chen - Home
       <button>
         hello
       </button>
-    </div>
+    </div> -->
   </div>
   <div class="desktop-headshot">
     <img
@@ -66,6 +36,22 @@ title: Eric Chen - Home
       alt="Eric Chen Profile Picture"
     />
   </div>
-</section> -->
-  </section>
 </section>
+
+<!-- 
+<section class="banner">
+  <div class="container">
+    <div class="hero-layout">
+      <h1>I'm Eric Chen</h1>
+
+      <div>
+        <img
+          src="assets/images/Headshot Square.jpeg"
+          alt="Eric Chen Profile Picture"
+          class="headshot"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+-->

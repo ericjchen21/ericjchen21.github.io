@@ -43,11 +43,13 @@ body {
   font-size: var(--font-size-base);
   font-family: IBM Plex Sans, sans-serif;
 
-  max-width: 1200px;
+  // max-width: 1200px;
   margin: 0 auto;
 }
 
 // Your variable imports/definitions usually go here
+
+@import "index";
 
 @import "header";
 
