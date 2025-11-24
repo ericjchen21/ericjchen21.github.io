@@ -8,7 +8,7 @@
   align-items: center;
 
   .index-container {
-    background-color: green;
+    // background-color: green;
 
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@
     }
 
     .index-banner {
-      background-color: red;
+      // background-color: red;
 
       display: flex;
       flex-direction: column;
@@ -35,7 +35,7 @@
       }
 
       .index-headshot {
-        background-color: orange;
+        // background-color: orange;
 
         display: flex;
 
@@ -48,7 +48,7 @@
       }
 
       .index-introduction {
-        background-color: lightblue;
+        // background-color: lightblue;
 
         display: flex;
         flex-direction: column;
@@ -82,7 +82,7 @@
   }
 
   .index-navbar {
-    background-color: yellow;
+    // background-color: yellow;
 
     display: flex;
     flex-wrap: wrap;
@@ -107,7 +107,8 @@
 
       &:hover {
         background-color: #123524;
-        font-size: 110%;
+        transform: scale(1.1);
+        // font-size: 110%;
       }
 
       // @media (min-width: $mobile-breakpoint) {
@@ -125,6 +126,10 @@
 
       &.index-nav-icon {
         width: 3rem;
+
+        &:hover {
+          transform: scale(1.1);
+        }
 
         img {
           height: 1.5rem;
