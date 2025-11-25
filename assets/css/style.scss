@@ -5,9 +5,9 @@ $bg-color: #1c1c1c;
 $text-color: #f7f6f2;
 $accent-color: #0000ff;
 $font-size-base: 16px;
-$mobile-breakpoint: 768px;
+$mobile-breakpoint: 960px;
 $sidebar-width: 250px;
-$standard-unit: 2vh;
+$std-unit: 2vh;
 
 @mixin clear-all {
   margin: 0;
@@ -23,7 +23,9 @@ $standard-unit: 2vh;
   --font-size-base: #{$font-size-base};
   --mobile-breakpoint: #{$mobile-breakpoint};
   --sidebar-width: #{$sidebar-width};
-  --standard-unit: #{$standard-unit};
+  --std-unit: #{$std-unit};
+  --max-width: calc(80 * var(--std-unit));
+  --navbar-height: calc(5 * var(--std-unit));
 }
 
 h1,
@@ -48,6 +50,12 @@ body {
   // max-width: 1200px;
   margin: 0 auto;
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
   img {
     // box-shadow: 0px 0px 50px #101010;
   }
@@ -61,9 +69,14 @@ body {
   }
 
   .svg-icon {
-    // height: calc(2 * var(--standard-unit));
-    width: calc(2 * var(--standard-unit));
+    // height: calc(2 * var(--std-unit));
+    width: calc(2 * var(--std-unit));
   }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 
 // Your variable imports/definitions usually go here

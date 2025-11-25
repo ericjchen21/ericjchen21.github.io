@@ -1,85 +1,32 @@
-<div class="navbar-container">
-  <div class="navbar">
-    <div class="mobile-navbar-items">
-      <!-- <div class="navbar-button icon" @click="open = !open">
-        <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor">
-          <path
-            fill-rule="evenodd"
-            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-            clip-rule="evenodd"
-          />
-        </svg>
-      </div> -->
-      
-        <div class="navbar-button icon" @click="open = !open" aria-label="Toggle Menu">
-            <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor">
-              <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
-            </svg>
-        </div>
-    </div>
-    <div class="desktop-navbar-items">
-      <a class="navbar-button" href="{{ '/' | relative_url }}"> Home </a>
-      <a class="navbar-button" href="{{ '/projects' | relative_url }}">
-        Projects
-      </a>
-      <a class="navbar-button" href="{{ '/resume' | relative_url }}">
-        Resume
-      </a>
-      <a class="navbar-button" href="{{ '/about' | relative_url }}"> About </a>
-      <a
-        class="navbar-button icon"
-        href="https://www.linkedin.com/in/ericjchen21/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="assets/images/InBug-White.png" alt="LinkedIn Icon" />
-      </a>
+<div class="navbar-spacer"></div>
+<div class="navbar" x-data="{ open: false }">
+  <div class="navbar-mobile-items">
+    <div
+      class="navbar-button icon"
+      @click="open = !open"
+      aria-label="Toggle Menu"
+    >
+      {% include nav/open_overlay_button.html %}
     </div>
   </div>
-  
-  <div 
-              class="backdrop"
-              x-show="open"
-              x-transition.opacity
-              @click="open = false" 
-              x-cloak
-          ></div>
-  
-          <!-- 4. The Sliding Drawer Navigation -->
-          <nav 
-              class="mobile-overlay"
-              x-show="open"
-              x-cloak
-              /* Transitions for smooth sliding */
-              x-transition:enter="transition ease-out duration-300"
-              x-transition:enter-start="transform translate-x-full"
-              x-transition:enter-end="transform translate-x-0"
-              x-transition:leave="transition ease-in duration-300"
-              x-transition:leave-start="transform translate-x-0"
-              x-transition:leave-end="transform translate-x-full"
-              /* Close on Escape key */
-              @keydown.escape.window="open = false"
-          >
-              <!-- Close "X" Button -->
-              <div style="display: flex; justify-content: flex-end;">
-                  <button @click="open = false" style="background:none; border:none; cursor:pointer;">
-                      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                  </button>
-              </div>
-  
-              <!-- 
-                 JEKYLL LINKS INTEGRATION 
-                 In your Jekyll file, you would likely do:
-                 {% for item in site.data.navigation %}
-                   <a href="{{ item.link }}">{{ item.name }}</a>
-                 {% endfor %}
-              -->
-              <h3>Menu</h3>
-              <a href="/">Home</a>
-              <a href="/about">About</a>
-              <a href="/blog">Blog</a>
-              <a href="/contact">Contact</a>
-          </nav>
+  <div class="navbar-desktop-items">{% include nav/nav_items.html %}</div>
+</div>
+<div
+  class="navbar-mobile-overlay"
+  x-show="open"
+  x-cloak
+  x-transition:enter="transition ease-out duration-300"
+  x-transition:enter-start="transform translate-x-full"
+  x-transition:enter-end="transform translate-x-0"
+  x-transition:leave="transition ease-in duration-300"
+  x-transition:leave-start="transform translate-x-0"
+  x-transition:leave-end="transform translate-x-full"
+  @keydown.escape.window="open = false"
+>
+  <div class="overlay-close-container">
+    <div class="navbar-button icon" @click="open = false">
+      {% include nav/close_overlay_button.html %}
+    </div>
+  </div>
+  {% include nav/nav_items.html %}
 </div>

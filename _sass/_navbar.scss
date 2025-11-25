@@ -1,173 +1,121 @@
-.navbar-container {
+.navbar-spacer {
+  height: var(--navbar-height);
+  width: 100vw;
+
+  background-color: transparent;
+}
+
+.navbar {
+  background-color: red;
+
+  position: fixed;
+  top: 0;
+
+  height: var(--navbar-height);
+  width: 100vw;
+
   display: flex;
   justify-content: center;
   align-items: center;
 
-  .navbar {
-    background-color: red;
+  @media (min-width: $mobile-breakpoint) {
+    width: var(--max-width);
+  }
 
-    height: calc(5 * var(--standard-unit));
-    width: 100vw;
+  padding: var(--std-unit);
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar-mobile-items {
+  display: flex;
 
-    @media (min-width: $mobile-breakpoint) {
-      width: calc(80 * var(--standard-unit));
-    }
-
-    .mobile-navbar-items {
-      display: flex;
-
-      @media (min-width: $mobile-breakpoint) {
-        display: none;
-      }
-    }
-
-    .mobile-navbar-overlay {
-      @include clear-all;
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: var(--sidebar-width);
-      height: 100vh;
-      background: var(--bg-color);
-      z-index: 999;
-      // padding-left: 1rem;
-      // padding-right: 2rem;
-      display: flex;
-      flex-direction: column;
-
-      // Transitions for Alpine (Optional helper class if not using utility classes)
-      &.transition-transform {
-        transition: transform 0.3s ease-in-out;
-      }
-      &.translate-x-full {
-        transform: translateX(100%);
-      }
-      &.translate-x-0 {
-        transform: translateX(0);
-      }
-
-      .sidebar-header {
-        @include clear-all;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        height: 3rem;
-
-        .sidebar-title {
-          @include clear-all;
-          font-weight: bold;
-          font-size: 1.5rem;
-          padding-left: 1.5rem;
-          padding-right: 1.5rem;
-        }
-
-        button {
-          @include clear-all;
-          cursor: pointer;
-
-          padding-left: 1.5rem;
-          padding-right: 1.5rem;
-          height: 100%;
-        }
-      }
-
-      .sidebar-links {
-        display: flex;
-        flex-direction: column;
-
-        a {
-          text-decoration: none;
-          color: var(--text-color);
-          font-size: 1.1rem;
-
-          &:hover {
-            color: var(--accent-color);
-          }
-        }
-      }
-    }
-
-    .desktop-navbar-items {
-      background-color: orange;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: calc(1 * var(--standard-unit));
-
-      @media (max-width: $mobile-breakpoint) {
-        display: none;
-      }
-    }
-
-    .navbar-button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      height: calc(3 * var(--standard-unit));
-      width: calc(8 * var(--standard-unit));
-
-      &.icon {
-        width: calc(3 * var(--standard-unit));
-      }
-
-      background-color: darken($bg-color, 5%);
-      // border: 10px;
-      // border-color: var(--text-color);
-      border-radius: calc(1 * var(--standard-unit))
-        calc(1 * var(--standard-unit));
-
-      color: var(--text-color);
-      text-decoration: none;
-
-      img {
-        height: calc(1.5 * var(--standard-unit));
-        width: calc(1.5 * var(--standard-unit));
-      }
-
-      &:hover {
-        background-color: #123524;
-        transform: scale(1.1);
-      }
-    }
+  @media (min-width: $mobile-breakpoint) {
+    display: none;
   }
 }
 
-/* MOBILE OVERLAY STYLES 
-           You can add this to your main SCSS file
-        */
-.mobile-overlay {
+.navbar-desktop-items {
+  background-color: orange;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--std-unit);
+
+  @media (max-width: $mobile-breakpoint) {
+    display: none;
+  }
+}
+
+.navbar-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: calc(3 * var(--std-unit));
+  width: calc(8 * var(--std-unit));
+
+  &.icon {
+    width: calc(3 * var(--std-unit));
+
+    img {
+      height: calc(1.5 * var(--std-unit));
+      width: calc(1.5 * var(--std-unit));
+    }
+  }
+
+  background-color: darken($bg-color, 5%);
+  // border: 10px;
+  // border-color: var(--text-color);
+  border-radius: calc(1 * var(--std-unit)) calc(1 * var(--std-unit));
+
+  color: var(--text-color);
+  text-decoration: none;
+
+  &:hover {
+    background-color: #123524;
+    transform: scale(1.1);
+  }
+}
+
+.navbar-mobile-overlay {
   position: fixed;
   top: 0;
-  right: 0;
   bottom: 0;
-  width: 80%; /* Adjust width of drawer */
-  max-width: 300px;
-  background-color: white;
-  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
+  left: 0;
+  right: 0;
+
+  // background-color: none;
+
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
   z-index: 50;
-  padding: 2rem;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
-.backdrop {
+.overlay-close-container {
+  background-color: green;
   position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 40;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(5 * var(--std-unit));
+
+  padding-right: calc(1 * var(--std-unit));
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  z-index: 51;
 }
 
-/* Utility to hide elements before Alpine loads 
-           Add this to your main CSS!
-        */
 [x-cloak] {
   display: none !important;
 }
