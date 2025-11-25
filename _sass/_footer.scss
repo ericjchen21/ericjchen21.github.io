@@ -1,4 +1,7 @@
 .footer-section {
+  height: calc(5 * var(--std-unit));
+  width: var(--max-width);
+
   padding: 2rem;
 
   display: flex;
