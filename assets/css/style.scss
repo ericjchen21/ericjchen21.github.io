@@ -7,6 +7,7 @@ $accent-color: #0000ff;
 $font-size-base: 16px;
 $mobile-breakpoint: 768px;
 $sidebar-width: 250px;
+$standard-unit: 2vh;
 
 @mixin clear-all {
   margin: 0;
@@ -22,6 +23,7 @@ $sidebar-width: 250px;
   --font-size-base: #{$font-size-base};
   --mobile-breakpoint: #{$mobile-breakpoint};
   --sidebar-width: #{$sidebar-width};
+  --standard-unit: #{$standard-unit};
 }
 
 h1,
@@ -57,11 +59,18 @@ body {
 
     cursor: pointer;
   }
+
+  .svg-icon {
+    // height: calc(2 * var(--standard-unit));
+    width: calc(2 * var(--standard-unit));
+  }
 }
 
 // Your variable imports/definitions usually go here
 
 @import "index";
+
+@import "navbar";
 
 @import "header";
 
