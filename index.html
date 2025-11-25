@@ -27,20 +27,20 @@ title: Eric Chen - Home
       </div>
     </div>
     <div class="index-navbar">
-      <my-button class="index-nav-button">
-        <a href="projects.html" class="index-nav-link">Projects</a>
-      </my-button>
-      <my-button class="index-nav-button">
-        <a href="projects.html" class="index-nav-link">Projects</a>
-      </my-button>
-      <my-button class="index-nav-button">
-        <a href="projects.html" class="index-nav-link">Projects</a>
-      </my-button>
-      <my-button class="index-nav-icon">
-        <img src="assets/images/InBug-White.png" alt="LinkedIn Icon">
-      </my-button>
+      <a class="my-button" href="{{ '/projects' | relative_url }}">
+          Projects
+      </a>
+      <a class="my-button" href="{{ '/resume' | relative_url }}" >
+          Resume
+      </a>
+      <a class="my-button" href="{{ '/about' | relative_url }}" >
+          About
+      </a>
+      <a class="my-button icon" href="https://www.linkedin.com/in/ericjchen21/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/images/InBug-White.png" alt="LinkedIn Icon">
+      </a>
     </div>
-    <!-- <div class="spacer"></div> -->
+    <div class="spacer"></div>
   </div>
 </div>
     <!--
