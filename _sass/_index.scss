@@ -1,5 +1,6 @@
 .landing-container {
-  height: calc(35 * var(--std-unit));
+  flex-grow: 1;
+  height: calc(40 * var(--std-unit));
   width: 100vw;
 
   display: flex;
@@ -77,6 +78,9 @@
 }
 
 .nav-down-container {
+  // margin-top: auto;
+  // position: absolute;
+  // bottom: 100svh;
   height: calc(5 * var(--std-unit));
   // max-width: var(--max-width);
 
