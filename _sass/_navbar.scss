@@ -30,11 +30,12 @@
   width: 100vw;
 
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 
   @media (min-width: $mobile-breakpoint) {
     width: var(--max-width);
+    justify-content: center;
   }
 
   padding: var(--std-unit);
