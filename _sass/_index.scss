@@ -1,15 +1,6 @@
-// .test {
-//   height: 10vh;
-//   background-color: red;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   font-size: calc(var(--standard-unit));
-// }
-
-.index-page {
-  width: var(--max-width);
+.landing-container {
   height: calc(30 * var(--std-unit));
+  width: 100vw;
 
   display: flex;
   flex-direction: column;
@@ -18,26 +9,16 @@
 
   @media (min-width: $mobile-breakpoint) {
     height: calc(40 * var(--std-unit));
+    width: var(--max-width);
     justify-content: center;
   }
 }
 
-.index-container {
+.landing-banner {
   display: flex;
   flex-direction: column;
-
-  margin: 2rem;
-  gap: 1rem;
-
-  @media (min-width: $mobile-breakpoint) {
-    margin: 0rem;
-    gap: 2rem;
-  }
-}
-
-.index-banner {
-  display: flex;
-  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   gap: 1rem;
 
   @media (min-width: $mobile-breakpoint) {
@@ -47,8 +28,10 @@
   }
 }
 
-.index-headshot {
+.landing-headshot {
   display: flex;
+  justify-content: center;
+  align-items: center;
 
   img {
     width: 40vh;
@@ -58,7 +41,7 @@
   }
 }
 
-.index-introduction {
+.landing-introduction {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,7 +52,7 @@
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: calc(3 * var(--std-unit));
     font-weight: bold;
     text-align: center;
 
@@ -87,47 +70,6 @@
     }
   }
 }
-
-// .index-navbar {
-//   // background-color: yellow;
-
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-
-//   gap: 1rem;
-
-//   .my-button {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     height: 3rem;
-//     width: 8rem;
-
-//     &.icon {
-//       width: 3rem;
-//     }
-
-//     background-color: darken($bg-color, 5%);
-//     // border: 10px;
-//     // border-color: var(--text-color);
-//     border-radius: 1rem 1rem;
-
-//     color: var(--text-color);
-//     text-decoration: none;
-
-//     img {
-//       height: 1.5rem;
-//       width: 1.5rem;
-//     }
-
-//     &:hover {
-//       background-color: #123524;
-//       transform: scale(1.1);
-//     }
-//   }
-// }
 
 .spacer {
   display: flex;

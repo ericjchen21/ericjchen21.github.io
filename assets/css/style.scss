@@ -47,17 +47,17 @@ body {
   font-size: var(--font-size-base);
   font-family: IBM Plex Sans, sans-serif;
 
-  // max-width: 1200px;
-  margin: 0 auto;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 
   *,
   *::before,
   *::after {
     box-sizing: border-box;
-  }
-
-  img {
-    // box-shadow: 0px 0px 50px #101010;
   }
 
   my-button {
@@ -69,18 +69,14 @@ body {
   }
 
   .svg-icon {
-    // height: calc(2 * var(--std-unit));
+    height: calc(2 * var(--std-unit));
     width: calc(2 * var(--std-unit));
   }
-
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: var(--std-unit);
 }
 
 // Your variable imports/definitions usually go here
+
+@import "my_button";
 
 @import "index";
 

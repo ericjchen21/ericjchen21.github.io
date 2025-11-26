@@ -3,7 +3,7 @@
   <div class="navbar">
     <div class="navbar-mobile-items">
       <div
-        class="navbar-button icon"
+        class="my-button icon"
         @click="open = !open"
         aria-label="Toggle Menu"
       >
@@ -26,7 +26,7 @@
     @keydown.escape.window="open = false"
   >
     <div class="overlay-close-container">
-      <div class="navbar-button icon" @click="open = false">
+      <div class="my-button icon" @click="open = false">
         {% include nav/close_overlay_button.html %}
       </div>
     </div>

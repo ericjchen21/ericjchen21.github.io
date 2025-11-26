@@ -1,6 +1,10 @@
 .footer-section {
   height: calc(5 * var(--std-unit));
-  width: var(--max-width);
+  width: 100vw;
+
+  @media (min-width: $mobile-breakpoint) {
+    width: var(--max-width);
+  }
 
   padding: 2rem;
 
