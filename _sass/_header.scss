@@ -31,11 +31,11 @@
 
     height: 100%;
 
-    @media (min-width: $mobile-breakpoint) {
+    @media (min-aspect-ratio: 1/1) {
       justify-content: center;
     }
 
-    @media (max-width: $mobile-breakpoint) {
+    @media (max-aspect-ratio: 1/1) {
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
     }
@@ -62,7 +62,7 @@
   .desktop-nav {
     display: none; // Hidden by default (mobile-first approach)
 
-    @media (min-width: $mobile-breakpoint) {
+    @media (min-aspect-ratio: 1/1) {
       display: flex;
       height: 100%;
     }
@@ -81,7 +81,7 @@
 
     align-items: center; /* Centers text vertically */
 
-    @media (min-width: $mobile-breakpoint) {
+    @media (min-aspect-ratio: 1/1) {
       display: none; // Hide on desktop
     }
   }

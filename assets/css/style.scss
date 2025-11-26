@@ -6,7 +6,6 @@ $text-color: #f7f6f2;
 $accent-color: #0000ff;
 $font-size-base: 16px;
 $mobile-breakpoint: 960px;
-$sidebar-width: 250px;
 $std-unit: 2vh;
 
 @mixin clear-all {
@@ -22,7 +21,6 @@ $std-unit: 2vh;
   --accent-color: #{$accent-color};
   --font-size-base: #{$font-size-base};
   --mobile-breakpoint: #{$mobile-breakpoint};
-  --sidebar-width: #{$sidebar-width};
   --std-unit: #{$std-unit};
   --max-width: calc(80 * var(--std-unit));
   --navbar-height: calc(5 * var(--std-unit));

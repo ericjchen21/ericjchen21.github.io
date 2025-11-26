@@ -2,8 +2,8 @@
   height: calc(5 * var(--std-unit));
   width: 100vw;
 
-  @media (min-width: $mobile-breakpoint) {
-    width: var(--max-width);
+  @media (min-aspect-ratio: 1/1) {
+    max-width: var(--max-width);
   }
 
   padding: 2rem;
