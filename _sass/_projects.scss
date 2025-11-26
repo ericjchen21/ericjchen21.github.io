@@ -13,6 +13,6 @@
   padding: var(--std-unit);
 
   h1 {
-    font-size: calc(3 * var(--std-unit));
+    font-size: var(--title-size);
   }
 }

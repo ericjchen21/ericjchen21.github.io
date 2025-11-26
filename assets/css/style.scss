@@ -22,9 +22,10 @@ $std-unit: 2svh;
   --font-size-base: #{$font-size-base};
   --mobile-breakpoint: #{$mobile-breakpoint};
   --std-unit: #{$std-unit};
-  --max-width: calc(80 * var(--std-unit));
+  --max-width: calc(60 * var(--std-unit));
   --navbar-height: calc(5 * var(--std-unit));
   --page-title-height: --navbar-height;
+  --title-size: calc(3 * var(--std-unit));
 }
 
 h1,
@@ -82,5 +83,7 @@ body {
 @import "navbar";
 
 @import "footer";
+
+@import "projects";
 
 @import "resume"; // The rest of your CSS...
