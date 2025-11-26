@@ -24,6 +24,7 @@ $std-unit: 2svh;
   --std-unit: #{$std-unit};
   --max-width: calc(80 * var(--std-unit));
   --navbar-height: calc(5 * var(--std-unit));
+  --page-title-height: --navbar-height;
 }
 
 h1,
