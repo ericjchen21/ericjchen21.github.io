@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: blank
 title: blank
 permalink: "/blank/"
 ---
