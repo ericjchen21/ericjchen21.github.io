@@ -22,7 +22,7 @@
       href="{{ '/assets/css/style.css' | relative_url }}"
     />
 
-    <title>{{ page.title | default: "My Website" }}</title>
+    <title>{{ site.title }} - {{ page.title }}</title>
   </head>
   <body>
     {{ content }}
