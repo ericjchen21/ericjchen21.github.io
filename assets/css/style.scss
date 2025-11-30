@@ -60,14 +60,6 @@ body {
     box-sizing: border-box;
   }
 
-  my-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    cursor: pointer;
-  }
-
   .svg-icon {
     height: calc(2 * var(--std-unit));
     width: calc(2 * var(--std-unit));
@@ -84,6 +76,4 @@ body {
 
 @import "footer";
 
-@import "projects";
-
-@import "resume"; // The rest of your CSS...
+@import "page";
