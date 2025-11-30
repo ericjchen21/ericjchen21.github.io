@@ -1,27 +1,7 @@
-<a
-  class="my-button {% if page.url == '/' %}active{% endif %}"
-  href="{{ '/' | relative_url }}"
->
-  Home
-</a>
-<a
-  class="my-button {% if page.url contains '/projects' %}active{% endif %}"
-  href="{{ '/projects' | relative_url }}"
->
-  Projects
-</a>
-<a
-  class="my-button {% if page.url contains '/resume' %}active{% endif %}"
-  href="{{ '/resume' | relative_url }}"
->
-  Resume
-</a>
-<a
-  class="my-button {% if page.url contains '/about' %}active{% endif %}"
-  href="{{ '/about' | relative_url }}"
->
-  About
-</a>
+<a class="my-button" href="{{ '/' | relative_url }}"> Home </a>
+<a class="my-button" href="{{ '/projects' | relative_url }}"> Projects </a>
+<a class="my-button" href="{{ '/resume' | relative_url }}"> Resume </a>
+<a class="my-button" href="{{ '/about' | relative_url }}"> About </a>
 <a
   class="my-button icon"
   href="https://www.linkedin.com/in/ericjchen21/"

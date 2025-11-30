@@ -23,8 +23,7 @@
   color: var(--text-color);
   text-decoration: none;
 
-  &:hover,
-  &.active {
+  &:hover {
     background-color: #123524;
     transform: scale(1.1);
   }
