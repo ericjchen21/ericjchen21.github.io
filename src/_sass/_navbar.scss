@@ -6,7 +6,7 @@
 }
 
 .navbar-container {
-  background-color: red;
+  background-image: linear-gradient(to bottom, $bg-color, transparent);
 
   position: fixed;
   top: 0;
