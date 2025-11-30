@@ -6,6 +6,8 @@
 }
 
 .navbar-container {
+  background-color: red;
+
   position: fixed;
   top: 0;
 
@@ -33,8 +35,6 @@
 }
 
 .navbar-desktop {
-  background-color: green;
-
   width: 100vw;
   max-width: var(--max-width);
 
