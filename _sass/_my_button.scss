@@ -21,6 +21,7 @@
   border-radius: calc(1 * var(--std-unit)) calc(1 * var(--std-unit));
 
   color: var(--text-color);
+  font-size: var(--std-unit);
   text-decoration: none;
 
   &:hover {
