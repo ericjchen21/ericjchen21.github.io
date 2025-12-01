@@ -1,24 +1,39 @@
-resume-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: var(--std-unit);
-
+.resume-container {
   width: 100vw;
 
   @media (min-aspect-ratio: 1/1) {
     max-width: var(--max-width);
   }
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: var(--std-unit);
+
   iframe {
     border: none;
 
     width: 100vw;
-    aspect-ratio: 8.5/11;
+    aspect-ratio: 8.5/11.5;
 
     @media (min-aspect-ratio: 1/1) {
       max-width: var(--max-width);
+      aspect-ratio: 8.5/10;
     }
   }
+}
+
+.download-button-container {
+  width: 100vw;
+
+  @media (min-aspect-ratio: 1/1) {
+    max-width: var(--max-width);
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: var(--std-unit);
 }

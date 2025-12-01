@@ -1,8 +1,4 @@
 .my-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   height: calc(3 * var(--std-unit));
   width: calc(8 * var(--std-unit));
 
@@ -15,9 +11,13 @@
     }
   }
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: var(--std-unit);
+
   background-color: darken($bg-color, 5%);
-  // border: 10px;
-  // border-color: var(--text-color);
   border-radius: calc(1 * var(--std-unit)) calc(1 * var(--std-unit));
 
   color: var(--text-color);

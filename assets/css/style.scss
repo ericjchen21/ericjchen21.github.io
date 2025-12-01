@@ -49,8 +49,6 @@ body {
 
   overflow-x: hidden;
 
-  // s
-
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -63,8 +61,8 @@ body {
   }
 
   .svg-icon {
-    height: calc(2 * var(--std-unit));
-    width: calc(2 * var(--std-unit));
+    height: calc(1.5 * var(--std-unit));
+    width: calc(1.5 * var(--std-unit));
   }
 }
 
@@ -78,3 +76,5 @@ body {
 @import "footer";
 
 @import "page";
+
+@import "resume";
