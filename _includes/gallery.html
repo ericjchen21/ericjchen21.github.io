@@ -1,0 +1,88 @@
+<script>
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('photoGallery', () => ({
+      // Liquid loop to build the JS array of images
+      images: [
+        {% for file in site.static_files %}
+          {% if file.path contains 'assets/img/gallery' %}
+            {
+              url: "{{ file.path | relative_url }}",
+              alt: "{{ file.basename }}"
+            },
+          {% endif %}
+        {% endfor %}
+      ],
+      open: false,
+      currentIndex: 0,
+
+      get currentImage() {
+        return this.images[this.currentIndex];
+      },
+
+      init() {
+        // Optional: Preload images for smoother navigation
+        this.images.forEach(img => {
+          new Image().src = img.url;
+        });
+      },
+
+      openModal(index) {
+        this.currentIndex = index;
+        this.open = true;
+        document.body.style.overflow = 'hidden'; // Lock scroll
+      },
+
+      closeModal() {
+        this.open = false;
+        document.body.style.overflow = ''; // Unlock scroll
+      },
+
+      next() {
+        this.currentIndex = (this.currentIndex + 1) % this.images.length;
+      },
+
+      prev() {
+        this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+      }
+    }))
+  })
+</script>
+
+<div x-data="photoGallery" @keydown.escape.window="closeModal()">
+  <div class="gallery-grid">
+    <template x-for="(image, index) in images" :key="index">
+      <div class="gallery-item" @click="openModal(index)">
+        <img :src="image.url" :alt="image.alt" loading="lazy" />
+        <div class="overlay">
+          <span x-text="image.alt"></span>
+        </div>
+      </div>
+    </template>
+  </div>
+
+  <template x-teleport="body">
+    <div
+      x-show="open"
+      x-transition.opacity.duration.300ms
+      class="gallery-modal"
+      style="display: none"
+    >
+      <button class="close-btn" @click="closeModal()">&times;</button>
+
+      <div class="modal-content" @click.outside="closeModal()">
+        <img
+          :src="currentImage.url"
+          :alt="currentImage.alt"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0 scale-90"
+          x-transition:enter-end="opacity-100 scale-100"
+        />
+
+        <button class="nav-btn prev" @click.stop="prev()">&#10094;</button>
+        <button class="nav-btn next" @click.stop="next()">&#10095;</button>
+      </div>
+
+      <div class="caption" x-text="currentImage.alt"></div>
+    </div>
+  </template>
+</div>
