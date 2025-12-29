@@ -1,2 +1,7 @@
 title: Eric Chen
 theme: null
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
