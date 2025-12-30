@@ -1,0 +1,15 @@
+---
+layout: page
+---
+
+{% for item in page.sections %}
+<div class="project-section">
+  {% if item.text %}
+  <div class="project-text">{{ item.text | markdownify }}</div>
+  {% endif %} {% if item.image %}
+  <div class="image-wrapper">
+    <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" />
+  </div>
+  {% endif %}
+</div>
+{% endfor %} {{ content }}

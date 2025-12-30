@@ -1,0 +1,28 @@
+.project-section {
+  background-color: red;
+  //   height: var(--page-title-height);
+  width: 100vw;
+
+  @media (min-aspect-ratio: 1/1) {
+    max-width: var(--max-width);
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  padding: var(--std-unit);
+
+  .project-text {
+    color: red;
+    background-color: blue;
+    // font-size: var(--title-size);
+    // max-width: 800px;
+    // text-align: center;
+  }
+
+  //   h1 {
+  //     font-size: var(--title-size);
+  //   }
+}
