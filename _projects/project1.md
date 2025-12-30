@@ -1,6 +1,7 @@
 ---
 layout: page
-title: test
+slug: EQ-Speaker
+title: EQ Speaker
 ---
 
-This is project 1
+For my
