@@ -1,21 +1,23 @@
 .home-banner {
-  height: calc(10 * var(--std-unit));
+  height: calc(15 * var(--std-unit));
   width: 100vw;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: var(--std-unit);
+  gap: calc(2 * var(--std-unit));
 
   padding: var(--std-unit);
 
   .banner-headshot {
+    height: 100%;
+
     img {
       // width: calc(20 * var(--std-unit));
       // height: calc(20 * var(--std-unit));
       height: 100%;
       aspect-ratio: 1 / 1;
-
+      object-fit: cover;
       border-radius: 20%;
       object-fit: cover;
     }
