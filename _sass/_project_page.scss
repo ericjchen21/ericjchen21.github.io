@@ -14,17 +14,33 @@
 
   .project-text {
     p {
+      text-align: left;
       font-size: var(--std-unit);
     }
   }
 
   .project-image {
-    height: calc(30 * var(--std-unit));
+    // height: calc(30 * var(--std-unit));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: calc(0.5 * var(--std-unit));
 
     img {
-      height: 100%;
+      height: calc(30 * var(--std-unit));
       width: auto;
       border-radius: 5%;
+    }
+
+    .project-image-caption {
+      text-align: center;
+      font-size: calc(0.8 * var(--std-unit));
+      color: darken($text-color, 20%);
+      font-style: italic;
+      // color: red;
     }
   }
 }

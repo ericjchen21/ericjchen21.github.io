@@ -9,7 +9,10 @@ layout: page
   {% endif %} {% if item.image %}
   <div class="project-image">
     <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" />
+    {% if item.caption %}
+    <p class="project-image-caption">{{ item.caption }}</p>
+    {% endif %}
   </div>
   {% endif %}
 </div>
-{% endfor %} {{ content }}
+{% endfor %}

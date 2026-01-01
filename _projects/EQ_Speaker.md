@@ -18,20 +18,12 @@ sections:
               3. An audio signal summing Op-Amp
               4. A signal amplifier
   - image: "/assets/img/projects/EQ Speaker/EQ Speaker Breadboard V1.jpg"
-  # - image: "/assets/img/Headshot Square.jpeg"
+    alt: "Our first breadboard prototype"
+    caption: "Our first breadboard prototype"
+  - text: |
+      We decided to use 3rd order low-pass, high-pass, and band-pass Butterworth filters with the following resistor and capacitor values:
+
+      | Low-Pass R (Ω) | Low-Pass C (μF) |
+      |----------------|-----------------|
+      |       3        |       3         |
 ---
-
-<!--
-# image: "/assets/img/start.jpg"
-# alt: "A winding road"
-
-# - text: "The middle of the trip was even more intense."
-
-# image: "/assets/img/middle.jpg"
-
-# alt: "Mountain peaks"
-
-# - text: "Finally, we reached the destination."
-
-# # You can even make the image optional
--->
