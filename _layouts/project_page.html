@@ -7,7 +7,7 @@ layout: page
   {% if item.text %}
   <div class="project-text">{{ item.text | markdownify }}</div>
   {% endif %} {% if item.image %}
-  <div class="image-wrapper">
+  <div class="project-image">
     <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" />
   </div>
   {% endif %}

@@ -1,6 +1,4 @@
 .project-section {
-  //   background-color: red;
-  //   height: var(--page-title-height);
   width: 100vw;
 
   @media (min-aspect-ratio: 1/1) {
@@ -15,17 +13,18 @@
   padding: var(--std-unit);
 
   .project-text {
-    // color: red;
-    // background-color: blue;
-    // font-size: var(--title-size);
-    // max-width: 800px;
-    // text-align: center;
     p {
       font-size: var(--std-unit);
     }
   }
 
-  //   h1 {
-  //     font-size: var(--title-size);
-  //   }
+  .project-image {
+    height: calc(30 * var(--std-unit));
+
+    img {
+      height: 100%;
+      width: auto;
+      border-radius: 5%;
+    }
+  }
 }
