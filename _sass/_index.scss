@@ -1,3 +1,37 @@
+.home-banner {
+  height: calc(10 * var(--std-unit));
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--std-unit);
+
+  padding: var(--std-unit);
+
+  .banner-headshot {
+    img {
+      // width: calc(20 * var(--std-unit));
+      // height: calc(20 * var(--std-unit));
+      height: 100%;
+      aspect-ratio: 1 / 1;
+
+      border-radius: 20%;
+      object-fit: cover;
+    }
+  }
+
+  .banner-intro {
+    h1 {
+      font-size: var(--title-size);
+      font-weight: bold;
+    }
+
+    p {
+    }
+  }
+}
+
 .landing-container {
   height: calc(40 * var(--std-unit));
   width: 100vw;
