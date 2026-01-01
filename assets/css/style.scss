@@ -3,10 +3,8 @@
 
 $bg-color: #1c1c1c;
 $text-color: #f7f6f2;
-$accent-color: #0000ff;
-$font-size-base: 16px;
-$mobile-breakpoint: 960px;
-$std-unit: 2svh;
+$accent-color: #3c3c3c;
+$std-unit: 16px;
 
 @mixin clear-all {
   margin: 0;
@@ -19,13 +17,12 @@ $std-unit: 2svh;
   --bg-color: #{$bg-color};
   --text-color: #{$text-color};
   --accent-color: #{$accent-color};
-  --font-size-base: #{$font-size-base};
-  --mobile-breakpoint: #{$mobile-breakpoint};
   --std-unit: #{$std-unit};
-  --max-width: calc(60 * var(--std-unit));
+  --font-size-base: calc(1 * var(--std-unit));
+  --max-width: calc(80 * var(--std-unit));
   --navbar-height: calc(5 * var(--std-unit));
   --page-title-height: --navbar-height;
-  --title-size: calc(3 * var(--std-unit));
+  --title-size: calc(4 * var(--std-unit));
 }
 
 h1,
@@ -63,6 +60,13 @@ body {
   .svg-icon {
     height: calc(1.5 * var(--std-unit));
     width: calc(1.5 * var(--std-unit));
+  }
+
+  hr {
+    height: calc(0.1 * var(--std-unit));
+    width: 100%;
+    border: 1px solid var(--text-color);
+    margin: 1rem 0;
   }
 }
 

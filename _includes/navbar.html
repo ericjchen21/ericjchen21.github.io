@@ -1,11 +1,11 @@
 <div class="navbar-container" x-data="{ open: false }">
   <div class="mobile-navbar">
-    |
+    [
     <p class="nav-link" @click="open = !open" aria-label="Toggle Menu">nav</p>
-    |
+    ]
   </div>
   <div class="desktop-navbar">
-    |
+    [
     <a
       class="nav-link {% if page.url == '/' %}active{% endif %}"
       href="{{ '/' | relative_url }}"
@@ -40,7 +40,7 @@
       rel="noopener noreferrer"
       >linkedin
     </a>
-    |
+    ]
   </div>
   <div
     class="navbar-mobile-overlay"
@@ -55,9 +55,9 @@
     @keydown.escape.window="open = false"
   >
     <div class="overlay-close-container">
-      |
+      [
       <p class="nav-link" @click="open = false">x</p>
-      |
+      ]
     </div>
     ---
     <a
