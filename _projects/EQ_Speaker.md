@@ -5,7 +5,7 @@ title: EQ Speaker
 sections:
   - text: |
       This project was one of the labs for my Electronic Circuit Application class, but I thought it was interesting enough to include here. Our assignment was to design and build an audio equalizer and amplifier from scratch using Butterworth filters and other provided circuits. This required learning the theory and applications of Op-Amps, Butterworth filters, how to use Fusion 360's Electronics Design workspace, and designing and assembling PCBs.
-  - image: "/assets/img/Headshot Square.jpg"
+  - image: "/assets/img/Headshot Square.jpeg"
 ---
 
 <!--
