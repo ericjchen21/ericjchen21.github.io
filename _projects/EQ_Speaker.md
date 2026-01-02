@@ -2,7 +2,7 @@
 layout: project_page
 slug: EQ-Speaker
 title: EQ Speaker
-date: Fall 2025
+date-string: Fall 2025
 thumbnail: "/assets/img/projects/EQ Speaker/EQ Speaker V2.png"
 sections:
   - text: |
