@@ -44,6 +44,9 @@
 
     gap: calc(0.5 * var(--std-unit));
 
+    width: min-content;
+    margin: 0 auto;
+
     img {
       height: calc(30 * var(--std-unit));
       width: auto;
@@ -55,6 +58,7 @@
       font-size: calc(0.8 * var(--std-unit));
       color: darken($text-color, 20%);
       font-style: italic;
+      width: 100%;
       // color: red;
     }
   }
