@@ -58,4 +58,30 @@ sections:
   - image: "/assets/img/projects/EQ Speaker/EQ Speaker V1.png"
     alt: "EQ Speaker V1"
     caption: "Assembled EQ Speaker V1"
+
+  - text: |
+      We also designed a wooden enclosure to house the EQ speaker in a nicer form factor. It was dubbed the "Audio Obliterator" since it didn't work as well as we had hoped.
+  - image: "/assets/img/projects/EQ Speaker/Audio Obliterator.jpg"
+    alt: "Audio Obliterator"
+    caption: "The Audio Obliterator, the knobs and PCB are removed in this photo since we had to scavenge some components for the second iteration of this project"
+
+  - text: |
+      At this point we had to take a step back from the EQ Speaker project to work on the other labs for this engineering class. When we had time to revisit it a few months later, we determined that it likely didn't work for two reasons, either the traces were wired incorrectly, or the resistor and capacitor values were incorrect, probably both.
+      <br>
+      <br>
+      What we didn't know going into this project was that surface mount resistors and capacitor values followed the E12 value series, the values 1.0, 1.2, 1.5, 1.8, 2.2, 2.7, 3.3, 3.9, 4.7, 5.6, 6.8, and 8.2 times powers of 10. Since there was a much wider range of values available for the through hole resistors and capacitors we assembled the breadboard with, we had chosen values that didn't nicely fit into the E12 scheme. This resulted in there being a discrepancy between the breadboard resistors and capacitors and the circuit board resistors and capacitors, so the circuit board didn't behave at all like we had expected it to.
+      <br>
+      <br>
+      Knowing this, and because the traces on the first iteration PCB were incorrect, we recalculated our resistor and capacitor values to better follow the E12 scheme, prioritizing the capacitors as it was easier for us to string together resistors in series to achieve the odd values required to have nice capacitors values than vice versa.
+      <br>
+      <br>
+      The new resistor and capacitor values we landed on are as follows:
+      <br>
+      <br>
+
+      |   | Low-Pass R (Ω) | Low-Pass C (μF) | High-Pass R (Ω) | High-Pass C (μF) | Band-Pass Low R (Ω) | Band-Pass Low C (μF) | Band-Pass Low R (Ω) | Band-Pass High C (μF) |
+      |---|:--------------:|:---------------:|:---------------:|:----------------:|:-------------------:|:--------------------:|:-------------------:|:---------------------:|
+      | 1 | 1000           | 2.200           | 1000            | 0.022            | 1200                | 0.220                | 800                 | 0.220                 |
+      | 2 | 1000           | 1.000           | 2700            | 0.022            | 1200                | 0.100                | 2000                | 0.220                 |
+      | 3 | 1000           | 0.150           | 18000           | 0.022            | 1200                | 0.015                | 15000               | 0.220                 |
 ---
