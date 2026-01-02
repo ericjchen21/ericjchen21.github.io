@@ -72,9 +72,12 @@ sections:
       What we didn't know going into this project was that surface mount resistors and capacitor values followed the E12 value series, the values 1.0, 1.2, 1.5, 1.8, 2.2, 2.7, 3.3, 3.9, 4.7, 5.6, 6.8, and 8.2 times powers of 10. Since there was a much wider range of values available for the through hole resistors and capacitors we assembled the breadboard with, we had chosen values that didn't nicely fit into the E12 scheme. This resulted in there being a discrepancy between the breadboard resistors and capacitors and the circuit board resistors and capacitors, so the circuit board didn't behave at all like we had expected it to.
       <br>
       <br>
-      Knowing this, and because the traces on the first iteration PCB were incorrect, we recalculated our resistor and capacitor values to better follow the E12 scheme, prioritizing the capacitors as it was easier for us to string together resistors in series to achieve the odd values required to have nice capacitors values than vice versa.
-      <br>
-      <br>
+      Knowing this, and because the traces on the first iteration PCB were incorrect, we prototyped a new breadboard, recalculating our resistor and capacitor values to better follow the E12 scheme, prioritizing the capacitors as it was easier for us to string together resistors in series to achieve the odd values required to have nice capacitors values than vice versa.
+  - image: "/assets/img/projects/EQ Speaker/EQ Speaker Breadboard V2.png"
+    alt: "EQ Speaker Breadboard V2"
+    caption: "Second breadboard prototype"
+
+  - text: |
       The new resistor and capacitor values we landed on are as follows:
       <br>
       <br>
@@ -84,4 +87,24 @@ sections:
       | 1 | 18000          | 0.1200          | 238             | 0.0470           | 1180                | 0.1200               | 3900                | 0.0470                |
       | 2 | 18000          | 0.0470          | 607             | 0.0470           | 1180                | 0.0470               | 9700                | 0.0470                |
       | 3 | 18000          | 0.0068          | 4170            | 0.0470           | 1180                | 0.0068               | 68000               | 0.0470                |
+
+      Then we designed the 2D PCB, this time also including mounting holes and legs to snap the PCB into sections to allow for a nicer final form factor:
+  - image: "/assets/img/projects/EQ Speaker/EQ Speaker 2D PCB V2.png"
+    alt: "EQ Speaker 2D PCB V2"
+    caption: "EQ Speaker 2D PCB V2"
+
+  - text: |
+      We also designed a new 3D printed enclosure that printed in multiple parts and bolted together with M3 screws and threaded inserts, made to somewhat resemble a boombox:
+  - image: "/assets/img/projects/EQ Speaker/EQ Speaker V2 Enclosure.png"
+    alt: "EQ Speaker V2 Enclosure"
+    caption: "EQ Speaker V2 enclosure, made of multiple components"
+
+  - text: |
+      After ordering the new PCB from JLC PCB, soldering all the components, and assembling, the final version of the EQ Speaker was done:
+  - image: "/assets/img/projects/EQ Speaker/EQ Speaker V2.png"
+    alt: "EQ Speaker V2"
+    caption: "EQ Speaker V2"
+
+  - text: |
+      It filters audio much better than the first version, though there are still some issues with the low-pass filter. We had to reuse some components, some of which may have been broken, and solder through hole components to surface mount pads, so I'm guessing that is likely where the issues are coming from. Hopefully I'll be able to put together another PCB soon with fresh components and it will work properly!
 ---
