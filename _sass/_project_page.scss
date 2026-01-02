@@ -13,8 +13,9 @@
   padding: var(--std-unit);
 
   .project-text {
+    text-align: left;
+
     p {
-      text-align: left;
       font-size: var(--std-unit);
     }
 
@@ -23,9 +24,9 @@
 
       th,
       td {
-        border: 1px solid var(--text-color); /* Uses your defined white/off-white color */
+        border: 1px solid var(--text-color);
         padding: calc(0.5 * var(--std-unit));
-        text-align: center;
+        // text-align: left;
       }
 
       th {

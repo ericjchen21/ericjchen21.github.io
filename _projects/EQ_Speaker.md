@@ -20,6 +20,7 @@ sections:
   - image: "/assets/img/projects/EQ Speaker/EQ Speaker Breadboard V1.jpg"
     alt: "Our first breadboard prototype"
     caption: "Our first breadboard prototype"
+
   - text: |
       We decided to use 3rd order low-pass, high-pass, and band-pass Butterworth filters set 3dB attenuation frequences of ~250Hz and ~2000 Hz with the following resistor and capacitor values:
       <br>
@@ -33,16 +34,19 @@ sections:
   - image: "/assets/img/projects/EQ Speaker/Third Order Low-Pass Butterworth Filter.png"
     alt: "Third Order Low-Pass Butterworth Filter"
     caption: "Third order low-pass Butterworth filter schematic taken from Practical Electronics for Inventors textbook. Resistors and capacitors are swapped to make high-pass and band-pass filters."
+
   - text: |
       After figuring out the resistor and capacitor values for our filters, we were able to put together a full schematic using Fusion 360's electronic design tools.
   - image: "/assets/img/projects/EQ Speaker/EQ Speaker Schematic V1.png"
     alt: "EQ Speaker Schematic V1"
     caption: "Full EQ speaker schematic V1"
+
   - text: |
       From this schematic we made a 2D PCB:
   - image: "/assets/img/projects/EQ Speaker/EQ Speaker 2D PCB V1.png"
     alt: "EQ Speaker 2D PCB V1"
     caption: "EQ Speaker 2D PCB V1"
+
   - text: |
       And then a 3D PCB:
   - image: "/assets/img/projects/EQ Speaker/EQ Speaker 3D PCB V1.png"
