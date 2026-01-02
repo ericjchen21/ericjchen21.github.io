@@ -3,6 +3,7 @@ layout: project_page
 slug: EQ-Speaker
 title: EQ Speaker
 date: Fall 2025
+thumbnail: "/assets/img/projects/EQ Speaker/EQ Speaker V2.png"
 sections:
   - text: |
       This project was one of the labs for my Electronic Circuit Application class, but I thought it was interesting enough to include here. Our assignment was to design and build an audio equalizer and amplifier from scratch using Butterworth filters and other provided circuits. This required learning:

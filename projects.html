@@ -3,3 +3,16 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
+
+<div class="project-list">
+  {% for project in site.projects %}
+  <div class="project-list-item">
+    <img src="{{ project.thumbnail }}" alt="{{ project.title }}" />
+    <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+
+    <!-- <p>{{ project.content | strip_html | truncate: 200 }}</p> -->
+
+    <!-- <a href="{{ project.url }}">Read More</a> -->
+  </div>
+  {% endfor %}
+</div>
