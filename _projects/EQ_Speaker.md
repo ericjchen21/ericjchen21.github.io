@@ -30,4 +30,9 @@ sections:
       | 1 | 1000           | 2.200           | 1000            | 0.022            | 1200                | 0.220                | 800                 | 0.220                 |
       | 2 | 1000           | 1.000           | 2700            | 0.022            | 1200                | 0.100                | 2000                | 0.220                 |
       | 3 | 1000           | 0.150           | 18000           | 0.022            | 1200                | 0.015                | 15000               | 0.220                 |
+  - image: "/assets/img/projects/EQ Speaker/Third Order Low-Pass Butterworth Filter.png"
+    alt: "Third Order Low-Pass Butterworth Filter"
+    caption: "Third order low-pass Butterworth filter schematic taken from Practical Electronics for Inventors textbook. Resistors and capacitors are swapped to make high-pass and band-pass filters."
+  - text: |
+      After figuring out the resistor and capacitor values for our filters, we were able to put together a full schematic using Fusion 360's electronic design tools.
 ---
