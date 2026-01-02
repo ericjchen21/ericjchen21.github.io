@@ -6,13 +6,6 @@ $text-color: #f7f6f2;
 $accent-color: #2c2c2c;
 $std-unit: 16px;
 
-@mixin clear-all {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background-color: inherit;
-}
-
 :root {
   --bg-color: #{$bg-color};
   --text-color: #{$text-color};
@@ -23,6 +16,13 @@ $std-unit: 16px;
   --navbar-height: calc(5 * var(--std-unit));
   --page-title-height: --navbar-height;
   --title-size: calc(4 * var(--std-unit));
+}
+
+@mixin clear-all {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: inherit;
 }
 
 h1,
@@ -39,18 +39,6 @@ ol {
 
 body {
   @include clear-all;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-size: var(--font-size-base);
-  font-family: "IBM Plex Mono", monospace;
-  line-height: 1.5;
-
-  overflow-x: hidden;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
 
   *,
   *::before,
@@ -58,30 +46,37 @@ body {
     box-sizing: border-box;
   }
 
-  .svg-icon {
-    height: calc(1.5 * var(--std-unit));
-    width: calc(1.5 * var(--std-unit));
-  }
+  overflow-x: hidden;
 
-  hr {
-    height: calc(0.1 * var(--std-unit));
-    width: 100%;
-    border: 1px solid var(--text-color);
-    margin: 1rem 0;
-  }
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: var(--font-size-base);
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 1.5;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  // .svg-icon {
+  //   height: calc(1.5 * var(--std-unit));
+  //   width: calc(1.5 * var(--std-unit));
+  // }
 }
 
-// Your variable imports/definitions usually go here
 @import "navbar";
 
-@import "my_button";
+@import "base";
+// @import "my_button";
+@import "footer";
 
 @import "index";
-
-@import "footer";
 
 @import "page";
 
 @import "resume";
 
 @import "project_page";
+
+@import "project_list";

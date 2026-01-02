@@ -1,0 +1,10 @@
+.content-container {
+  height: min-content;
+  width: 1000vw;
+  max-width: var(--max-width);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}

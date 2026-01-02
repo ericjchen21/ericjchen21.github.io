@@ -4,7 +4,7 @@
 
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
 
   border-bottom: 1px solid var(--accent-color);
 }
@@ -23,6 +23,7 @@
 }
 
 .mobile-navbar {
+  height: 100%;
   width: 100vw;
 
   display: flex;
@@ -37,7 +38,8 @@
 }
 
 .desktop-navbar {
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   max-width: var(--max-width);
 
   display: flex;

@@ -1,0 +1,17 @@
+.project-list-item {
+  height: calc(8 * var(--std-unit));
+  width: 100%;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  gap: calc(1 * var(--std-unit));
+
+  padding: var(--std-unit);
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
