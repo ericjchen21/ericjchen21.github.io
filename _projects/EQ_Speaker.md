@@ -42,14 +42,20 @@ sections:
     caption: "Full EQ speaker schematic V1"
 
   - text: |
-      From this schematic we made a 2D PCB:
+      From this schematic we made a 2D PCB, learning about copper layers, traces, polygons, and vias:
   - image: "/assets/img/projects/EQ Speaker/EQ Speaker 2D PCB V1.png"
     alt: "EQ Speaker 2D PCB V1"
     caption: "EQ Speaker 2D PCB V1"
 
   - text: |
-      And then a 3D PCB:
+      And then a rendering of the PCB in 3D:
   - image: "/assets/img/projects/EQ Speaker/EQ Speaker 3D PCB V1.png"
     alt: "EQ Speaker 3D PCB V1"
     caption: "EQ Speaker 3D PCB V1"
+
+  - text: |
+      We then exported the gerber files for the 2D PCB and sent them to JLC PCB to be manufactured. Once they arrived, we use solder masks to apply solder masks on the components' footprints, and manually placed all the surface mount components before baking them onto the PCB in an oven. Then we finished the PCB by soldering on the remaining through hole components by hand.
+  - image: "/assets/img/projects/EQ Speaker/EQ Speaker V1.png"
+    alt: "EQ Speaker V1"
+    caption: "Assembled EQ Speaker V1"
 ---
