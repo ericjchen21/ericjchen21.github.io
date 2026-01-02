@@ -35,4 +35,17 @@ sections:
     caption: "Third order low-pass Butterworth filter schematic taken from Practical Electronics for Inventors textbook. Resistors and capacitors are swapped to make high-pass and band-pass filters."
   - text: |
       After figuring out the resistor and capacitor values for our filters, we were able to put together a full schematic using Fusion 360's electronic design tools.
+  - image: "/assets/img/projects/EQ Speaker/EQ Speaker Schematic V1.png"
+    alt: "EQ Speaker Schematic V1"
+    caption: "Full EQ speaker schematic V1"
+  - text: |
+      From this schematic we made a 2D PCB:
+  - image: "/assets/img/projects/EQ Speaker/EQ Speaker 2D PCB V1.png"
+    alt: "EQ Speaker 2D PCB V1"
+    caption: "EQ Speaker 2D PCB V1"
+  - text: |
+      And then a 3D PCB:
+  - image: "/assets/img/projects/EQ Speaker/EQ Speaker 3D PCB V1.png"
+    alt: "EQ Speaker 3D PCB V1"
+    caption: "EQ Speaker 3D PCB V1"
 ---
