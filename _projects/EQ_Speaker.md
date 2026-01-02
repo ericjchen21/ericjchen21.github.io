@@ -21,7 +21,9 @@ sections:
     alt: "Our first breadboard prototype"
     caption: "Our first breadboard prototype"
   - text: |
-      We decided to use 3rd order low-pass, high-pass, and band-pass Butterworth filters with the following resistor and capacitor values:
+      We decided to use 3rd order low-pass, high-pass, and band-pass Butterworth filters set 3dB attenuation frequences of ~250Hz and ~2000 Hz with the following resistor and capacitor values:
+      <br>
+      <br>
 
       |   | Low-Pass R (Ω) | Low-Pass C (μF) | High-Pass R (Ω) | High-Pass C (μF) | Band-Pass Low R (Ω) | Band-Pass Low C (μF) | Band-Pass Low R (Ω) | Band-Pass High C (μF) |
       |---|:--------------:|:---------------:|:---------------:|:----------------:|:-------------------:|:--------------------:|:-------------------:|:---------------------:|

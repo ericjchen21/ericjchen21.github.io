@@ -17,6 +17,21 @@
       text-align: left;
       font-size: var(--std-unit);
     }
+
+    table {
+      border-collapse: collapse;
+
+      th,
+      td {
+        border: 1px solid var(--text-color); /* Uses your defined white/off-white color */
+        padding: calc(0.5 * var(--std-unit));
+        text-align: center;
+      }
+
+      th {
+        font-weight: bold;
+      }
+    }
   }
 
   .project-image {
