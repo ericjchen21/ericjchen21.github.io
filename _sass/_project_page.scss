@@ -1,9 +1,7 @@
 .project-section {
-  width: 100vw;
-
-  @media (min-aspect-ratio: 1/1) {
-    max-width: var(--max-width);
-  }
+  height: min-content;
+  width: 100%;
+  max-width: var(--max-width);
 
   display: flex;
   flex-direction: column;
@@ -13,6 +11,7 @@
   padding: var(--std-unit);
 
   .project-text {
+    height: 100%;
     width: 100%;
 
     text-align: left;
@@ -28,7 +27,6 @@
       td {
         border: 1px solid var(--text-color);
         padding: calc(0.5 * var(--std-unit));
-        // text-align: left;
       }
 
       th {
@@ -38,7 +36,8 @@
   }
 
   .project-image {
-    // height: calc(30 * var(--std-unit));
+    height: min-content;
+    width: min-content;
 
     display: flex;
     flex-direction: column;
@@ -47,9 +46,6 @@
 
     gap: calc(0.5 * var(--std-unit));
 
-    width: min-content;
-    margin: 0 auto;
-
     img {
       height: calc(25 * var(--std-unit));
       width: auto;
@@ -57,12 +53,14 @@
     }
 
     .project-image-caption {
-      text-align: center;
-      font-size: calc(0.8 * var(--std-unit));
-      color: darken($text-color, 20%);
-      font-style: italic;
+      height: 100%;
       width: 100%;
-      // color: red;
+
+      text-align: center;
+
+      font-size: calc(0.8 * var(--std-unit));
+      font-style: italic;
+      color: darken($text-color, 20%);
     }
   }
 }
