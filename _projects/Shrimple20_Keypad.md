@@ -1,8 +1,8 @@
 ---
 layout: project_page
-slug: EQ-Speaker
-date: 2025-09-01
-title: EQ Speaker
+slug: Shrimple20-Keypad
+date: 2025-11-01
+title: Shrimple20 Keypad
 date-string: Fall 2025
 thumbnail: "/assets/img/projects/EQ Speaker/EQ Speaker V2.png"
 sections:

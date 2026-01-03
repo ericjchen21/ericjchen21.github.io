@@ -1,0 +1,17 @@
+{% assign sorted_projects = site.projects | sort: "date" | reversed %}
+
+<div class="project-list">
+  {% for project in sorted_projects %}
+  <div class="project-list-item">
+    <div class="project-list-image">
+      <img src="{{ project.thumbnail }}" alt="{{ project.title }}" />
+    </div>
+    <div class="project-list-text">
+      <h2>
+        <a class="project-link" href="{{ project.url }}">{{ project.title }}</a>
+      </h2>
+      <p class="project-date-string">{{ project.date-string }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
