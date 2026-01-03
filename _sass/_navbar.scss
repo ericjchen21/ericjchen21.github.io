@@ -10,13 +10,6 @@
 }
 
 .nav-link {
-  text-decoration: none;
-  color: var(--text-color);
-
-  &:hover {
-    text-decoration: underline;
-  }
-
   &.active {
     font-weight: bold;
   }

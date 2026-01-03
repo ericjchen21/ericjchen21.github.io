@@ -32,12 +32,14 @@
     justify-content: center;
     align-items: start;
 
+    gap: calc(1 * var(--std-unit));
+
     padding: calc(2 * var(--std-unit));
   }
 }
 
 .index-projects-title {
-  height: var(--navbar-height);
+  height: var(--page-title-height);
   width: 100%;
 
   display: flex;

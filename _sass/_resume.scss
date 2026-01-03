@@ -1,9 +1,6 @@
 .resume-container {
-  width: 100vw;
-
-  @media (min-aspect-ratio: 1/1) {
-    max-width: var(--max-width);
-  }
+  height: min-content;
+  width: 100%;
 
   display: flex;
   justify-content: center;
@@ -11,16 +8,43 @@
 
   padding: var(--std-unit);
 
+  border-top: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+
   iframe {
     border: none;
 
-    width: 100vw;
+    width: 100%;
     aspect-ratio: 8.5/11.5;
 
     @media (min-aspect-ratio: 1/1) {
       max-width: var(--max-width);
       aspect-ratio: 8.5/9;
     }
+  }
+}
+
+.resume-download-container {
+  height: calc(1 * var(--navbar-height));
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: calc(0.5 * var(--std-unit));
+
+  padding: var(--std-unit);
+
+  border-top: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+
+  #resume-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: calc(0.5 * var(--std-unit));
   }
 }
 

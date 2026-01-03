@@ -1,40 +1,42 @@
 <div class="navbar-container" x-data="{ open: false }">
   <div class="mobile-navbar">
     [
-    <p class="nav-link" @click="open = !open" aria-label="Toggle Menu">nav</p>
+    <p class="link nav-link" @click="open = !open" aria-label="Toggle Menu">
+      nav
+    </p>
     ]
   </div>
   <div class="desktop-navbar">
     [
     <a
-      class="nav-link {% if page.url == '/' %}active{% endif %}"
+      class="link nav-link {% if page.url == '/' %}active{% endif %}"
       href="{{ '/' | relative_url }}"
       >home</a
     >
     |
     <a
-      class="nav-link {% if page.url == '/projects/' %}active{% endif %}"
+      class="link nav-link {% if page.url == '/projects/' %}active{% endif %}"
       href="{{ '/projects' | relative_url }}"
     >
       projects
     </a>
     |
     <a
-      class="nav-link {% if page.url == '/resume/' %}active{% endif %}"
+      class="link nav-link {% if page.url == '/resume/' %}active{% endif %}"
       href="{{ '/resume' | relative_url }}"
     >
       resume
     </a>
     |
     <a
-      class="nav-link {% if page.url == '/about/' %}active{% endif %}"
+      class="link nav-link {% if page.url == '/about/' %}active{% endif %}"
       href="{{ '/about' | relative_url }}"
     >
       about
     </a>
     |
     <a
-      class="nav-link"
+      class="link nav-link"
       href="https://www.linkedin.com/in/ericjchen21/"
       target="_blank"
       rel="noopener noreferrer"
