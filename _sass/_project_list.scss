@@ -40,18 +40,15 @@
       justify-content: space-between;
       align-items: center;
 
-      .project-link {
-        font-size: calc(1.5 * var(--std-unit));
-        font-weight: normal;
+      #project-link {
         text-decoration: none;
         color: var(--text-color);
-
         &:hover {
           text-decoration: underline;
         }
       }
 
-      .project-date-string {
+      #project-date-string {
         justify-self: flex-end;
       }
     }

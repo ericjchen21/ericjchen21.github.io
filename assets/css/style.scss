@@ -52,16 +52,26 @@ body {
 
   overflow-x: hidden;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
   background-color: var(--bg-color);
   color: var(--text-color);
   font-size: var(--font-size-base);
   font-family: "IBM Plex Mono", monospace;
   line-height: 1.5;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
+  h1 {
+    font-size: calc(3 * var(--std-unit));
+    font-weight: normal;
+  }
+
+  h2 {
+    font-size: calc(1.5 * var(--std-unit));
+    font-weight: normal;
+  }
 
   // .svg-icon {
   //   height: calc(1.5 * var(--std-unit));

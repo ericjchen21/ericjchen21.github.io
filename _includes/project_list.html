@@ -1,6 +1,7 @@
-{% assign sorted_projects = site.projects | sort: "date" | reverse %}
+{% assign num_items = include.num_items | default: 50 %} {% assign
+sorted_projects = site.projects | sort: "date" | reverse %}
 <div class="project-list">
-  {% for project in sorted_projects %}
+  {% for project in sorted_projects limit: num_items %}
   <div class="project-list-item">
     <div class="project-list-image">
       <img src="{{ project.thumbnail }}" alt="{{ project.title }}" />
@@ -9,7 +10,7 @@
       <h2>
         <a class="project-link" href="{{ project.url }}">{{ project.title }}</a>
       </h2>
-      <p class="project-date-string">{{ project.date-string }}</p>
+      <p id="project-date-string">{{ project.date-string }}</p>
     </div>
   </div>
   {% endfor %}

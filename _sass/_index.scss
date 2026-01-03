@@ -33,14 +33,14 @@
     align-items: start;
 
     padding: calc(2 * var(--std-unit));
-
-    h1 {
-      font-size: var(--title-size);
-      font-weight: normal;
-    }
-
-    p {
-      font-size: calc(1.5 * var(--std-unit));
-    }
   }
+}
+
+.index-projects-title {
+  height: var(--navbar-height);
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
