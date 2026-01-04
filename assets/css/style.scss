@@ -22,12 +22,12 @@ $accent-color: #2c2c2c;
 
   --navbar-height: calc(3 * var(--std-unit));
   --page-title-height: calc(5 * var(--std-unit));
-  --spacer-height: calc(3 * var(--navbar-height));
+  --spacer-height: calc(3 * var(--std-unit));
 
   @media (min-aspect-ratio: 1/1) {
     --navbar-height: calc(5 * var(--std-unit));
     --page-title-height: calc(7.5 * var(--std-unit));
-    --spacer-height: calc(5 * var(--navbar-height));
+    --spacer-height: calc(5 * var(--std-unit));
   }
 }
 
