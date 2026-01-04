@@ -1,22 +1,31 @@
 .home-banner {
-  height: calc(25 * var(--std-unit));
+  height: min-content;
+  // height: calc(25 * var(--std-unit));
   width: 100vw;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  // gap: calc(2 * var(--std-unit));
 
-  // padding: calc(2 * var(--std-unit));
+  gap: calc(2 * var(--std-unit));
+
+  padding: calc(2 * var(--std-unit));
+
+  @media (min-aspect-ratio: 1/1) {
+    flex-direction: row;
+    gap: calc(4 * var(--std-unit));
+    // gap: calc(4 * var(--std-unit));
+  }
 
   .banner-headshot {
     height: 100%;
     width: min-content;
 
-    padding: calc(2 * var(--std-unit));
+    // padding: calc(2 * var(--std-unit));
 
     img {
-      height: 100%;
+      height: calc(20 * var(--std-unit));
       aspect-ratio: 1 / 1;
       object-fit: cover;
       border-radius: 20%;
@@ -30,11 +39,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 
     gap: calc(1 * var(--std-unit));
 
-    padding: calc(2 * var(--std-unit));
+    // padding: calc(2 * var(--std-unit));
+
+    @media (min-aspect-ratio: 1/1) {
+      align-items: start;
+    }
   }
 }
 
