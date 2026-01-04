@@ -1,6 +1,12 @@
-{% assign num_items = include.num_items | default: 50 %} {% assign
-sorted_projects = site.projects | sort: "date" | reverse %}
+{% assign list_title = include.list_title %} {% assign num_items =
+include.num_items | default: 50 %} {% assign sorted_projects = site.projects |
+sort: "date" | reverse %}
 <div class="project-list">
+  <!-- {% if list_title %}
+  <div class="project-list-title">
+    <h2>{{ list_title }}</h2>
+  </div>
+  {% endif %} -->
   {% for project in sorted_projects limit: num_items %}
   <div class="project-list-item">
     <div class="project-list-image">
