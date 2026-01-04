@@ -15,15 +15,10 @@
     gap: calc(3 * var(--std-unit));
   }
 
-  .banner-headshot {
-    height: 100%;
-    width: min-content;
-
-    img {
-      height: calc(20 * var(--std-unit));
-      width: auto;
-      border-radius: 10%;
-    }
+  img {
+    height: calc(20 * var(--std-unit));
+    width: auto;
+    border-radius: 10%;
   }
 
   .banner-intro {
