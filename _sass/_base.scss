@@ -11,4 +11,17 @@
   // gap: calc(2 * var(--std-unit));
 
   // padding: calc(2 * var(--std-unit));
+
+  .title-container {
+    height: var(--page-title-height);
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+    // padding: var(--std-unit);
+  }
 }

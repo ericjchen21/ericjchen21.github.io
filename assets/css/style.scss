@@ -94,27 +94,15 @@ body {
       text-decoration: underline;
     }
   }
-
-  // .svg-icon {
-  //   height: calc(1.5 * var(--std-unit));
-  //   width: calc(1.5 * var(--std-unit));
-  // }
-
-  // .expand {
-  //   height: 100%;
-  //   width: 100%;
-  // }
 }
 
 @import "navbar";
 
 @import "base";
-// @import "my_button";
+
 @import "footer";
 
 @import "index";
-
-@import "page";
 
 @import "resume";
 
