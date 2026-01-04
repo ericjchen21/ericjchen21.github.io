@@ -4,16 +4,16 @@ title: Home
 permalink: /
 ---
 
+<spacer></spacer>
 <div class="home-banner">
   <div class="banner-headshot">
     <img
-      src="assets/img/Headshot Square.jpeg"
+      src="\assets\img\Headshot Square.jpeg"
       alt="Eric Chen Profile Picture"
     />
   </div>
   <div class="banner-intro">
     <h1>Hi, I'm Eric</h1>
-    <!-- <br /> -->
     <h3>
       Engineering, CS, and Math
       <br />
@@ -22,8 +22,8 @@ permalink: /
     <h3>&#x2193; Check out my recent projects</h3>
   </div>
 </div>
-<div class="index-projects-title">
+<spacer></spacer>
+<div class="title-container">
   <h2>Recent Projects</h2>
 </div>
-{% include project_list.html list_title="Recent Projects" num_items=5 %}
-<div class="spacer"></div>
+{% include project_list.html num_items=3 %}

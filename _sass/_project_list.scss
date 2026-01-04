@@ -7,21 +7,9 @@
   justify-content: start;
   align-items: center;
 
-  padding: calc(2 * var(--std-unit));
-
-  .project-list-title {
-    height: var(--page-title-height);
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .project-list-item {
     height: calc(10 * var(--std-unit));
     width: 100%;
-    max-width: calc(1 * var(--max-width));
 
     display: flex;
     justify-content: start;
@@ -34,14 +22,10 @@
     border-top: 1px solid var(--accent-color);
     border-bottom: 1px solid var(--accent-color);
 
-    .project-list-image {
+    img {
       height: 100%;
       width: auto;
-
-      img {
-        height: 100%;
-        width: auto;
-      }
+      border-radius: 10%;
     }
 
     .project-list-text {

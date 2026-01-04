@@ -10,31 +10,25 @@
 
   gap: calc(1 * var(--std-unit));
 
-  padding: calc(2 * var(--std-unit));
-
   @media (min-aspect-ratio: 1/1) {
     flex-direction: row;
     gap: calc(3 * var(--std-unit));
-    // gap: calc(4 * var(--std-unit));
   }
 
   .banner-headshot {
     height: 100%;
     width: min-content;
 
-    // padding: calc(2 * var(--std-unit));
-
     img {
       height: calc(20 * var(--std-unit));
       aspect-ratio: 1 / 1;
       object-fit: cover;
-      border-radius: 20%;
+      border-radius: 10%;
     }
   }
 
   .banner-intro {
     height: 100%;
-    // width: min-content;
 
     display: flex;
     flex-direction: column;
@@ -42,8 +36,6 @@
     align-items: center;
 
     gap: calc(1 * var(--std-unit));
-
-    // padding: calc(2 * var(--std-unit));
 
     @media (min-aspect-ratio: 1/1) {
       align-items: start;

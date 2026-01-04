@@ -18,7 +18,7 @@ $std-unit: 16px;
   --max-width: calc(60 * var(--std-unit));
 
   --navbar-height: calc(5 * var(--std-unit));
-  --page-title-height: calc(7 * var(--std-unit));
+  --page-title-height: calc(7.5 * var(--std-unit));
 }
 
 @mixin clear-all {
@@ -77,7 +77,7 @@ body {
     font-weight: normal;
   }
 
-  .spacer {
+  spacer {
     height: calc(1 * var(--navbar-height));
     width: 100%;
   }

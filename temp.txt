@@ -1,0 +1,6 @@
+
+<!-- <div class="index-projects-title">
+  <h2>Recent Projects</h2>
+</div> -->
+<!-- {% include project_list.html list_title="Recent Projects" num_items=5 %} -->
+<!-- {% include project_list.html num_items=5 %} -->
