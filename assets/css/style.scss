@@ -10,7 +10,7 @@ $accent-color: #2c2c2c;
   --text-color: #{$text-color};
   --accent-color: #{$accent-color};
 
-  --std-unit: 10px;
+  --std-unit: 12px;
 
   @media (min-aspect-ratio: 1/1) {
     --std-unit: 16px;
