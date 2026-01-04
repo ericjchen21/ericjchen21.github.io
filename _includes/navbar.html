@@ -15,7 +15,7 @@
     >
     |
     <a
-      class="link nav-link {% if page.url == '/projects/' %}active{% endif %}"
+      class="link nav-link {% if page.url contains '/projects/' %}active{% endif %}"
       href="{{ '/projects' | relative_url }}"
     >
       projects

@@ -1,6 +1,6 @@
 .home-banner {
   height: min-content;
-  width: 100%;
+  // width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -23,6 +23,7 @@
 
   .banner-intro {
     height: 100%;
+    // width: fit-content;
 
     display: flex;
     flex-direction: column;
