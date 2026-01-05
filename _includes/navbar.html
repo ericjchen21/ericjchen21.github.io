@@ -42,6 +42,14 @@
       rel="noopener noreferrer"
       >linkedin
     </a>
+    |
+    <a
+      class="link nav-link"
+      href="https://github.com/ericjchen21"
+      target="_blank"
+      rel="noopener noreferrer"
+      >github
+    </a>
     ]
   </div>
   <div
@@ -61,41 +69,67 @@
       <p class="nav-link" @click="open = false">x</p>
       ]
     </div>
-    ---
-    <a
-      class="nav-link {% if page.url == '/' %}active{% endif %}"
-      href="{{ '/' | relative_url }}"
-      >home</a
-    >
-    ---
-    <a
-      class="nav-link {% if page.url == '/projects/' %}active{% endif %}"
-      href="{{ '/projects' | relative_url }}"
-    >
-      projects
-    </a>
-    ---
-    <a
-      class="nav-link {% if page.url == '/resume/' %}active{% endif %}"
-      href="{{ '/resume' | relative_url }}"
-    >
-      resume
-    </a>
-    ---
-    <a
-      class="nav-link {% if page.url == '/about/' %}active{% endif %}"
-      href="{{ '/about' | relative_url }}"
-    >
-      about
-    </a>
-    ---
-    <a
-      class="nav-link"
-      href="https://www.linkedin.com/in/ericjchen21/"
-      target="_blank"
-      rel="noopener noreferrer"
-      >linkedin
-    </a>
-    ---
+    <!-- --- -->
+    <div class="navbar-mobile-item">
+      [
+      <a
+        class="link nav-link {% if page.url == '/' %}active{% endif %}"
+        href="{{ '/' | relative_url }}"
+        >home</a
+      >
+      ]
+    </div>
+    <div class="navbar-mobile-item">
+      [
+      <a
+        class="link nav-link {% if page.url == '/projects/' %}active{% endif %}"
+        href="{{ '/projects' | relative_url }}"
+      >
+        projects
+      </a>
+      ]
+    </div>
+    <div class="navbar-mobile-item">
+      [
+      <a
+        class="link nav-link {% if page.url == '/resume/' %}active{% endif %}"
+        href="{{ '/resume' | relative_url }}"
+      >
+        resume
+      </a>
+      ]
+    </div>
+    <div class="navbar-mobile-item">
+      [
+      <a
+        class="link nav-link {% if page.url == '/about/' %}active{% endif %}"
+        href="{{ '/about' | relative_url }}"
+      >
+        about
+      </a>
+      ]
+    </div>
+    <div class="navbar-mobile-item">
+      [
+      <a
+        class="link nav-link"
+        href="https://www.linkedin.com/in/ericjchen21/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >linkedin
+      </a>
+      ]
+    </div>
+    <div class="navbar-mobile-item">
+      [
+      <a
+        class="link nav-link"
+        href="https://github.com/ericjchen21"
+        target="_blank"
+        rel="noopener noreferrer"
+        >github
+      </a>
+      ]
+    </div>
   </div>
 </div>

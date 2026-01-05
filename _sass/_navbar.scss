@@ -22,8 +22,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: var(--std-unit);
+
   gap: calc(0.5 * var(--std-unit));
+
+  padding: var(--std-unit);
 
   @media (min-aspect-ratio: 1/1) {
     display: none;
@@ -38,6 +40,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   gap: calc(0.5 * var(--std-unit));
 
   padding: var(--std-unit);
@@ -62,7 +65,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: calc(0.5 * var(--std-unit));
+
+  gap: calc(2 * var(--std-unit));
+
+  .navbar-mobile-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: calc(0.5 * var(--std-unit));
+  }
 }
 
 .overlay-close-container {

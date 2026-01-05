@@ -20,6 +20,11 @@
       font-size: var(--std-unit);
     }
 
+    a {
+      color: var(--font-color);
+      text-decoration: underline;
+    }
+
     table {
       border-collapse: collapse;
 
@@ -47,9 +52,14 @@
     gap: calc(0.5 * var(--std-unit));
 
     img {
-      height: calc(25 * var(--std-unit));
-      width: auto;
+      height: auto;
+      width: 100%;
       border-radius: 2%;
+
+      @media (min-aspect-ratio: 1/1) {
+        height: calc(25 * var(--std-unit));
+        width: auto;
+      }
     }
 
     .project-image-caption {
