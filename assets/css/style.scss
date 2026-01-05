@@ -5,6 +5,8 @@ $bg-color: #1c1c1c;
 $text-color: #f7f6f2;
 $accent-color: #2c2c2c;
 
+$mobile-breakpoint: 600px;
+
 :root {
   --bg-color: #{$bg-color};
   --text-color: #{$text-color};
@@ -12,7 +14,7 @@ $accent-color: #2c2c2c;
 
   --std-unit: 12px;
 
-  @media (min-aspect-ratio: 1/1) {
+  @media (min-width: #{$mobile-breakpoint}) {
     --std-unit: 16px;
   }
 
@@ -24,8 +26,8 @@ $accent-color: #2c2c2c;
   --page-title-height: calc(5 * var(--std-unit));
   --spacer-height: calc(3 * var(--std-unit));
 
-  @media (min-aspect-ratio: 1/1) {
-    --navbar-height: calc(5 * var(--std-unit));
+  @media (min-width: #{$mobile-breakpoint}) {
+    // --navbar-height: calc(5 * var(--std-unit));
     --page-title-height: calc(7.5 * var(--std-unit));
     --spacer-height: calc(5 * var(--std-unit));
   }

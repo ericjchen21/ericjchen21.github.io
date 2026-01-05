@@ -56,7 +56,7 @@
       width: 100%;
       border-radius: 2%;
 
-      @media (min-aspect-ratio: 1/1) {
+      @media (min-width: #{$mobile-breakpoint}) {
         height: calc(25 * var(--std-unit));
         width: auto;
       }

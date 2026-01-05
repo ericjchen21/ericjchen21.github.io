@@ -27,7 +27,7 @@
 
   padding: var(--std-unit);
 
-  @media (min-aspect-ratio: 1/1) {
+  @media (min-width: #{$mobile-breakpoint}) {
     display: none;
   }
 }
