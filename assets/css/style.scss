@@ -14,10 +14,8 @@ $mobile-breakpoint: 600px;
 
   --std-unit: 12px;
 
-  @media (min-width: #{$mobile-breakpoint}) {
-    @media (min-height: #{$mobile-breakpoint}) {
-      --std-unit: 16px;
-    }
+  @media (min-width: #{$mobile-breakpoint}) and (min-height: #{$mobile-breakpoint}) {
+    --std-unit: 16px;
   }
 
   --font-size-base: calc(1 * var(--std-unit));
