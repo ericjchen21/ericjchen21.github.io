@@ -45,7 +45,7 @@
 
   padding: var(--std-unit);
 
-  @media (max-aspect-ratio: 1/1) {
+  @media (max-width: #{$mobile-breakpoint}) {
     display: none;
   }
 }

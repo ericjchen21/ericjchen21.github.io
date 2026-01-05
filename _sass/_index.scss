@@ -9,7 +9,7 @@
 
   gap: calc(1 * var(--std-unit));
 
-  @media (min-aspect-ratio: 1/1) {
+  @media (min-width: #{$mobile-breakpoint}) {
     flex-direction: row;
 
     gap: calc(3 * var(--std-unit));
@@ -34,7 +34,7 @@
 
     text-align: center;
 
-    @media (min-aspect-ratio: 1/1) {
+    @media (min-width: #{$mobile-breakpoint}) {
       align-items: start;
 
       text-align: left;
