@@ -1,3 +1,15 @@
+.project-github {
+  height: fit-content;
+  // height: calc(1 * var(--spacer-height));
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: calc(1 * var(--std-unit));
+}
+
 .project-section {
   height: min-content;
   width: 100%;

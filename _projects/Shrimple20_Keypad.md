@@ -2,8 +2,9 @@
 layout: project_page
 slug: Shrimple20-Keypad
 date: 2025-12-01
-title: Shrimple20 Keypad
-date-string: December 2025
+title: "Shrimple20 Keypad"
+date-string: "December 2025"
+github: https://github.com/ericjchen21/Shrimple20-Keypad.git
 thumbnail: "/assets/img/projects/Shrimple20 Keypad/Shrimple20 Keypad.jpg"
 sections:
   - text: |

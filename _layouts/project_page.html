@@ -8,7 +8,19 @@ layout: base
   <p>{{ page.date-string }}</p>
   {% endif %}
 </div>
-{% for item in page.sections %}
+{% if page.github %}
+<div class="project-github">
+  [
+  <a
+    href="{{ page.github }}"
+    class="link"
+    target="_blank"
+    rel="noopener noreferrer"
+    >project github</a
+  >
+  ]
+</div>
+{% endif %} {% for item in page.sections %}
 <div class="project-section">
   {% if item.text %}
   <div class="project-text">{{ item.text | markdownify }}</div>
