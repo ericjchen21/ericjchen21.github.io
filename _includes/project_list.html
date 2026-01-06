@@ -8,7 +8,9 @@ sorted_projects = site.projects | sort: "date" | reverse %}
       <h3>
         <a class="link" href="{{ project.url }}">{{ project.title }}</a>
       </h3>
+      {% if project.date-string %}
       <p class="project-date-string">{{ project.date-string }}</p>
+      {% endif %}
     </div>
   </div>
   {% endfor %}

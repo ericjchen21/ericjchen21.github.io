@@ -1,7 +1,13 @@
 ---
-layout: page
+layout: base
 ---
 
+<div class="title-container">
+  <h2>{{ page.title }}</h2>
+  {% if page.date-string %}
+  <p>{{ page.date-string }}</p>
+  {% endif %}
+</div>
 {% for item in page.sections %}
 <div class="project-section">
   {% if item.text %}
