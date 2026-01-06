@@ -17,6 +17,8 @@
     justify-content: space-around;
     align-items: center;
 
+    padding: calc(1 * var(--std-unit));
+
     .sec-a {
       justify-content: start;
     }
