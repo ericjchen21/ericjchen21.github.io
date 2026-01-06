@@ -1,5 +1,5 @@
 .footer-container {
-  height: calc(5 * var(--std-unit));
+  height: calc(1 * var(--footer-height));
   width: 100vw;
 
   display: flex;
@@ -20,10 +20,24 @@
     padding: 0 calc(2 * var(--std-unit));
 
     .sec-a {
-      justify-content: start;
+      height: 100%;
+      width: fit-content;
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
     }
+
     .sec-b {
-      justify-content: right;
+      height: 100%;
+      width: fit-content;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: end;
     }
   }
 }
