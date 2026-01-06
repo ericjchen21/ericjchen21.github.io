@@ -79,12 +79,12 @@ sections:
       <br>
       Now we had to design a case for the Shrimple 20, making sure to implement the following features:
 
-              1. A top plate that switches could comfortable snap-fit into
-              2. Support for the PCB with clearance for the hot-swap sockets and diodes
-              3. Clearance for the microcontroller's data cable
-              4. Holes for heat-set inserts
-              5. Minimal overhangs to minimize support material
-              6. A shrimp logo (because well, it's shrimple really)
+        1. A top plate that switches could comfortable snap-fit into
+        2. Support for the PCB with clearance for the hot-swap sockets and diodes
+        3. Clearance for the microcontroller's data cable
+        4. Holes for heat-set inserts
+        5. Minimal overhangs to minimize support material
+        6. A shrimp logo (because well, it's shrimple really)
 
       This is the design we settled on:
   - image: "/assets/img/projects/Shrimple20 Keypad/Shrimple20 Keypad Case.png"
@@ -106,17 +106,17 @@ sections:
   - text: |
       The last step for this project was installing the firmware. We chose to use [KMK](https://github.com/KMKfw/kmk_firmware) because we wanted to try using Circuit Python. Setting this up required learning the following:
 
-              1. KMK modules
-              2. KMK extensions
-              3. Layers
-              4. Media keys
-              5. Macros
+        1. KMK modules
+        2. KMK extensions
+        3. Layers
+        4. Media keys
+        5. Macros
 
       Ultimately, we decided on having three layers:
 
-              1. Basic numberpad layer
-              2. Media keys and navigation controls,including a button for Spotify
-              3. SHRIMP
+        1. Basic numberpad layer
+        2. Media keys and navigation controls,including a button for Spotify
+        3. SHRIMP
 
       Defined here:
 
