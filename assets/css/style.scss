@@ -50,9 +50,9 @@ ol {
 body {
   @include clear-all;
 
-  // -webkit-text-size-adjust: 100%;
-  // -moz-text-size-adjust: 100%;
-  // -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
 
   *,
@@ -106,8 +106,6 @@ body {
       text-decoration: underline;
     }
   }
-
-  text-size-adjust: 100%;
 }
 
 @import "navbar";
