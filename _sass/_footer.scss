@@ -17,6 +17,10 @@
     justify-content: space-around;
     align-items: center;
 
+    @media (min-width: #{$footer-breakpoint}) {
+      justify-content: space-between;
+    }
+
     padding: 0 calc(2 * var(--std-unit));
 
     .sec-a {
@@ -28,6 +32,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: start;
+
+      @media (min-width: #{$footer-breakpoint}) {
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+
+        gap: calc(0.5 * var(--std-unit));
+      }
     }
 
     .sec-b {
@@ -38,6 +50,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: end;
+
+      @media (min-width: #{$footer-breakpoint}) {
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+
+        gap: calc(0.5 * var(--std-unit));
+      }
     }
   }
 }

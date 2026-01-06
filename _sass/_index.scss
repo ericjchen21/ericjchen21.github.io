@@ -8,7 +8,7 @@
 
   gap: calc(1 * var(--std-unit));
 
-  @media (min-width: #{$mobile-breakpoint}) {
+  @media (min-width: #{$index-banner-breakpoint}) {
     flex-direction: row;
 
     gap: calc(3 * var(--std-unit));
@@ -33,7 +33,7 @@
 
     text-align: center;
 
-    @media (min-width: #{$mobile-breakpoint}) {
+    @media (min-width: #{$index-banner-breakpoint}) {
       align-items: start;
 
       text-align: left;
