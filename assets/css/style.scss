@@ -27,8 +27,6 @@ $mobile-breakpoint: 600px;
   --spacer-height: calc(3 * var(--std-unit));
 
   @media (min-width: #{$mobile-breakpoint}) {
-    // --navbar-height: calc(5 * var(--std-unit));
-    // --page-title-height: calc(7.5 * var(--std-unit));
     --spacer-height: calc(5 * var(--std-unit));
   }
 }

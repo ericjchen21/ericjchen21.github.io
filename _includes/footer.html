@@ -19,7 +19,6 @@
   (function () {
     const el = document.getElementById("last-updated");
     if (!el) return;
-    // Public repo endpoint — update these values if you change owner/repo
     const owner = "ericjchen21";
     const repo = "ericjchen21.github.io";
     const url = `https://api.github.com/repos/${owner}/${repo}`;
@@ -35,8 +34,6 @@
         const opts = { year: "numeric", month: "long", day: "numeric" };
         el.textContent = d.toLocaleDateString(undefined, opts);
       })
-      .catch(() => {
-        // leave the Liquid fallback if the API fails
-      });
+      .catch(() => {});
   })();
 </script>

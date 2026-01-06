@@ -8,8 +8,6 @@
   justify-content: start;
   align-items: center;
 
-  // gap: calc(2 * var(--std-unit));
-
   padding: 0px calc(2 * var(--std-unit));
 
   .title-container {
@@ -22,9 +20,5 @@
     align-items: center;
 
     gap: calc(0.5 * var(--std-unit));
-
-    // border-top: 1px solid var(--accent-color);
-    // border-bottom: 1px solid var(--accent-color);
-    // padding: var(--std-unit);
   }
 }
