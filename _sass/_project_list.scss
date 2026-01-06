@@ -25,6 +25,10 @@
     img {
       height: 100%;
       width: auto;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      object-position: center;
+      // object-fit: cover;
       border-radius: calc(1 * var(--std-unit));
     }
 
