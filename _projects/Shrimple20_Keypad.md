@@ -46,5 +46,106 @@ sections:
     caption: "KB2040"
 
   - text: |
-      With all of our components selected, we needed to choose a form factor for the keypad. We chose to have 4 columns by 5 rows to match the size of a typical full-sized keyboard's numpad. To actually create the keypad, we first had to learn Ergogen, an open source .yaml file based keyboard layout generator. This just means that it takes a .yaml file, a structured, text-based data file, with information on groups of keys, locations, dimensions, etc., and creates a .dxf blueprint of the keyboard layout, and a KiCad PCB file to be exported and wired later. Our keypad layout ended up looking like this, the corresponding .yaml, .dxf, and .kicad_pcb files are available on my GitHub,
+      We also bought some basic [blank Khail Choc V1 keycaps](https://www.adafruit.com/product/5737) that we could write characters on:
+  - image: "/assets/img/projects/Shrimple20 Keypad/Shrimple20 Keypad Keycaps.jpg"
+    alt: "Blank Khail Choc V1 keycaps"
+    caption: "Blank Khail Choc V1 keycaps"
+
+  - text: |
+      With all of our components selected, we needed to choose a form factor for the keypad. We chose to have 4 columns by 5 rows to match the size of a typical full-sized keyboard's numpad. To actually create the keypad, we first had to learn Ergogen, an open source .yaml file based keyboard layout generator. This just means that it takes a .yaml file, a structured, text-based data file, with information on groups of keys, locations, dimensions, etc., and creates a .dxf blueprint of the keyboard layout, and a KiCad PCB file to be exported and wired later. Our keypad layout ended up looking like this (.yaml, .dxf, and .kicad_pcb files are available on my GitHub):
+  - image: "/assets/img/projects/Shrimple20 Keypad/Shrimple20 Keypad Ergogen.png"
+    alt: "Shrimple20 Keypad Ergogen"
+    caption: "Shrimple20 Keypad in Ergogen.
+      Note that the .dxf on display only shows the key locations, the rotary encoder and microcontroller footprints are still included in the .kicad_pcb file"
+
+  - text: |
+      Next we had to route the traces for the PCBs using KiCad, an Electronic Design Automation (EDA) software. Loading up the raw .kicad_pcb file from Ergogen looks like this:
+  - image: "/assets/img/projects/Shrimple20 Keypad/Shrimple20 Keypad KiCad Unwired.png"
+    alt: "Shrimple20 Keypad KiCad Unwired"
+    caption: "Shrimple20 Keypad in KiCad, unwired"
+
+  - text: |
+      After manually routing all the traces, editing board outlines, and adding text, the KiCad file looks like this:
+  - image: "/assets/img/projects/Shrimple20 Keypad/Shrimple20 Keypad KiCad Wired.png"
+    alt: "Shrimple20 Keypad KiCad Wired"
+    caption: "Shrimple20 Keypad in KiCad, wired"
+
+  - text: |
+      We chose the name "Shrimple20" because, well, it's shrimple really.
+      <br>
+      <br>
+      At this point, the PCB was reading to manufactured, so we exported the gerber file and sent it to JLC PCB.
+      <br>
+      <br>
+      Now we had to design a case for the Shrimple 20, making sure to implement the following features:
+
+              1. A top plate that switches could comfortable snap-fit into
+              2. Support for the PCB with clearance for the hot-swap sockets and diodes
+              3. Clearance for the microcontroller's data cable
+              4. Holes for heat-set inserts
+              5. Minimal overhangs to minimize support material
+              6. A shrimp logo (because well, it's shrimple really)
+
+      This is the design we settled on:
+  - image: "/assets/img/projects/Shrimple20 Keypad/Shrimple20 Keypad Case.png"
+    alt: "Shrimple20 Keypad Case"
+    caption: "Shrimple20 Keypad Case"
+
+  - text: |
+      We also had to design a knob to fit on the rotary encoder:
+  - image: "/assets/img/projects/Shrimple20 Keypad/Shrimple20 Keypad Knob.png"
+    alt: "Shrimple20 Keypad Knob"
+    caption: "Shrimple20 Keypad knob"
+
+  - text: |
+      After all the components had been printed and the PCB had arrived and had all components soldered in place, we had the finished physical product:
+  - image: "/assets/img/projects/Shrimple20 Keypad/Shrimple20 Keypad.jpg"
+    alt: "Shrimple20 Keypad"
+    caption: "Fully assembled Shrimple20 Keypad"
+
+  - text: |
+      The last step for this project was installing the firmware. We chose to use [KMK](https://github.com/KMKfw/kmk_firmware) because we wanted to try using Circuit Python. Setting this up required learning the following:
+
+              1. KMK modules
+              2. KMK extensions
+              3. Layers
+              4. Media keys
+              5. Macros
+
+      Ultimately, we decided on having three layers:
+
+              1. Basic numberpad layer
+              2. Media keys and navigation controls,including a button for Spotify
+              3. SHRIMP
+
+      Defined here:
+      
+      ```
+        keyboard.keymap = [
+
+          [KC.BSPC, KC.LPRN, KC.RPRN, KC. PSLS,
+          KC.N7  , KC.N8  , KC.N9  , KC.PAST,
+          KC.N4  , KC.N5  , KC.N6  , KC.PMNS,
+          KC.N1  , KC.N2  , KC.N3  , KC.PPLS,
+          TO_LYR2, KC.N0  , KC.DOT , KC.PENT,
+          xxxxxxx, xxxxxxx, xxxxxxx, KC.MUTE,
+          ],
+
+          [KC.DEL , KC.MPRV, KC.MPLY, KC.MNXT,
+          KC.HOME, KC.UP  , KC.END , KC.PGUP,
+          KC.LEFT, KC.DOWN, KC.RGHT, KC.PGDN,
+          TAB_PRV, TAB_NXT, WND_PRV, WND_NXT,
+          TO_LYR2, SPOTIFY, PG_BCK , PG_FWD ,
+          xxxxxxx, xxxxxxx, xxxxxxx, TO_SHRIMP,
+          ],
+
+          [SHRIMP , SHRIMP , SHRIMP , SHRIMP ,
+          SHRIMP , SHRIMP , SHRIMP , SHRIMP ,
+          SHRIMP , SHRIMP , SHRIMP , SHRIMP ,
+          SHRIMP , SHRIMP , SHRIMP , SHRIMP ,
+          SHRIMP , SHRIMP , SHRIMP , SHRIMP ,
+          xxxxxxx, xxxxxxx, xxxxxxx, SHRIMP ,
+          ],
+      ]
+    ```
 ---
