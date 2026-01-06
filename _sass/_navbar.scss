@@ -25,7 +25,7 @@
 
   gap: calc(0.5 * var(--std-unit));
 
-  padding: var(--std-unit);
+  padding: 0 calc(2 * var(--std-unit));
 
   @media (min-width: #{$mobile-breakpoint}) {
     display: none;
@@ -43,7 +43,7 @@
 
   gap: calc(0.5 * var(--std-unit));
 
-  padding: var(--std-unit);
+  padding: calc(2 * var(--std-unit));
 
   @media (max-width: #{$mobile-breakpoint}) {
     display: none;
