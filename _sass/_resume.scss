@@ -1,43 +1,7 @@
-.resume-container {
+img {
   height: auto;
   width: 100%;
-
-  padding: calc(1 * var(--std-unit));
-
-  border-top: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
-
-  img {
-    height: auto;
-    width: 100%;
-  }
 }
-
-// .resume-container {
-//   height: min-content;
-//   width: 100%;
-
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   // padding: var(--std-unit);
-
-//   border-top: 1px solid var(--accent-color);
-//   border-bottom: 1px solid var(--accent-color);
-
-//   // iframe {
-//   //   border: none;
-
-//   //   // width: 100%;
-//   //   aspect-ratio: 8.5/14;
-
-//   //   @media (min-aspect-ratio: 1/1) {
-//   //     // max-width: var(--max-width);
-//   //     aspect-ratio: 8.5/9;
-//   //   }
-//   // }
-// }
 
 .resume-download-container {
   height: calc(1 * var(--navbar-height));
@@ -51,8 +15,8 @@
 
   padding: var(--std-unit);
 
-  border-top: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  // border-top: 1px solid var(--accent-color);
+  // border-bottom: 1px solid var(--accent-color);
 
   #resume-download {
     display: flex;
