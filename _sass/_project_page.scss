@@ -25,6 +25,11 @@
       text-decoration: underline;
     }
 
+    ol {
+      list-style-position: inside;
+      padding-left: calc(1 * var(--std-unit));
+    }
+
     table {
       border-collapse: collapse;
 
@@ -40,10 +45,16 @@
     }
 
     // code {
-    //   background-color: var(--accent-color);
-    //   padding: calc(0.2 * var(--std-unit)) calc(0.4 * var(--std-unit));
-    //   border-radius: 5%;
     // }
+    div.highlight {
+      background-color: var(--accent-color);
+      padding: calc(1.5 * var(--std-unit));
+      border-radius: calc(1 * var(--std-unit));
+
+      pre.highlight {
+        margin: 0;
+      }
+    }
   }
 
   .project-image {
