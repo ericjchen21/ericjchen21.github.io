@@ -3,7 +3,7 @@ layout: project_page
 slug: Crum-Regatta-Kayaks
 date: 2023-04-01
 title: "Crum Regatta Kayaks"
-date-string: "February 2024"
+date-string: "April 2023, 2024, 2025"
 # github: https://github.com/ericjchen21/Ender-3-V2-Fan-Shroud.git
 thumbnail: "/assets/img/projects/Crum Regatta/2025 Regatta 2.jpg"
 sections:
