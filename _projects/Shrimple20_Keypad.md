@@ -119,33 +119,33 @@ sections:
               3. SHRIMP
 
       Defined here:
-      
-      ```
-        keyboard.keymap = [
+
+      ```python
+      keyboard.keymap = [
 
           [KC.BSPC, KC.LPRN, KC.RPRN, KC. PSLS,
-          KC.N7  , KC.N8  , KC.N9  , KC.PAST,
-          KC.N4  , KC.N5  , KC.N6  , KC.PMNS,
-          KC.N1  , KC.N2  , KC.N3  , KC.PPLS,
-          TO_LYR2, KC.N0  , KC.DOT , KC.PENT,
-          xxxxxxx, xxxxxxx, xxxxxxx, KC.MUTE,
-          ],
+           KC.N7  , KC.N8  , KC.N9  , KC.PAST,
+           KC.N4  , KC.N5  , KC.N6  , KC.PMNS,
+           KC.N1  , KC.N2  , KC.N3  , KC.PPLS,
+           TO_LYR2, KC.N0  , KC.DOT , KC.PENT,
+           xxxxxxx, xxxxxxx, xxxxxxx, KC.MUTE,
+           ],
 
           [KC.DEL , KC.MPRV, KC.MPLY, KC.MNXT,
-          KC.HOME, KC.UP  , KC.END , KC.PGUP,
-          KC.LEFT, KC.DOWN, KC.RGHT, KC.PGDN,
-          TAB_PRV, TAB_NXT, WND_PRV, WND_NXT,
-          TO_LYR2, SPOTIFY, PG_BCK , PG_FWD ,
-          xxxxxxx, xxxxxxx, xxxxxxx, TO_SHRIMP,
-          ],
+           KC.HOME, KC.UP  , KC.END , KC.PGUP,
+           KC.LEFT, KC.DOWN, KC.RGHT, KC.PGDN,
+           TAB_PRV, TAB_NXT, WND_PRV, WND_NXT,
+           TO_LYR2, SPOTIFY, PG_BCK , PG_FWD ,
+           xxxxxxx, xxxxxxx, xxxxxxx, TO_SHRIMP,
+           ],
 
           [SHRIMP , SHRIMP , SHRIMP , SHRIMP ,
-          SHRIMP , SHRIMP , SHRIMP , SHRIMP ,
-          SHRIMP , SHRIMP , SHRIMP , SHRIMP ,
-          SHRIMP , SHRIMP , SHRIMP , SHRIMP ,
-          SHRIMP , SHRIMP , SHRIMP , SHRIMP ,
-          xxxxxxx, xxxxxxx, xxxxxxx, SHRIMP ,
-          ],
+           SHRIMP , SHRIMP , SHRIMP , SHRIMP ,
+           SHRIMP , SHRIMP , SHRIMP , SHRIMP ,
+           SHRIMP , SHRIMP , SHRIMP , SHRIMP ,
+           SHRIMP , SHRIMP , SHRIMP , SHRIMP ,
+           xxxxxxx, xxxxxxx, xxxxxxx, SHRIMP ,
+           ],
       ]
-    ```
+      ```
 ---
