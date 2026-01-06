@@ -104,3 +104,16 @@
     }
   }
 }
+
+.project-nav-container {
+  height: calc(1 * var(--navbar-height));
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: calc(0.5 * var(--std-unit));
+
+  padding: var(--std-unit);
+}

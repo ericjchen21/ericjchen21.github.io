@@ -34,3 +34,18 @@ layout: base
   {% endif %}
 </div>
 {% endfor %}
+<div class="project-nav-container">
+  [ {% if page.next %} {% assign next_project = page.next %} {% else %} {%
+  assign next_project = site.projects.first %} {% endif %}
+  <a class="link" href="{{ next_project.url | relative_url }}">
+    &#x2190; prev
+  </a>
+  |
+  <a class="link" href="{{ '/projects.html' | relative_url }}"> projects </a>
+  | {% if page.previous %} {% assign prev_project = page.previous %} {% else %}
+  {% assign prev_project = site.projects.last %} {% endif %}
+  <a class="link" href="{{ prev_project.url | relative_url }}">
+    next &#x2192;
+  </a>
+  ]
+</div>
