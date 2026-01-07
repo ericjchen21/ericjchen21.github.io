@@ -100,7 +100,7 @@
 
       font-size: calc(0.8 * var(--std-unit));
       font-style: italic;
-      color: darken($text-color, 20%);
+      color: var(--caption-color);
     }
   }
 }

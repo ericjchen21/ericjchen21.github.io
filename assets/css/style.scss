@@ -2,8 +2,9 @@
 ---
 
 $bg-color: #1c1c1c;
-$text-color: #f7f6f2;
 $accent-color: #2c2c2c;
+$text-color: #f7f6f2;
+$caption-color: #a7a6a2;
 
 $mobile-breakpoint: 600px;
 $index-banner-breakpoint: 900px;
@@ -13,6 +14,7 @@ $footer-breakpoint: 800px;
   --bg-color: #{$bg-color};
   --text-color: #{$text-color};
   --accent-color: #{$accent-color};
+  --caption-color: #{$caption-color};
 
   --std-unit: 12px;
 
@@ -65,8 +67,9 @@ body {
 
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-size: var(--std-unit);
+
   font-family: "IBM Plex Mono", monospace;
+  font-size: var(--std-unit);
   line-height: 1.5;
 
   h1 {
@@ -89,10 +92,6 @@ body {
     width: 100%;
   }
 
-  .unicode-symbol {
-    font-size: calc(1 * var(--std-unit));
-  }
-
   .link {
     color: var(--text-color);
     text-decoration: none;
@@ -112,6 +111,8 @@ body {
 @import "index";
 
 @import "resume";
+
+@import "about";
 
 @import "project_page";
 
