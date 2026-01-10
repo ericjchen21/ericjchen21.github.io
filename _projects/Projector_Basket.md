@@ -27,7 +27,7 @@ sections:
   - text: |
       And here it is fully installed:
 
-  - image: "/assets/img/projects/Projector Basket/Projector Basket Installed.jpg"
+  - image: "/assets/img/projects/Projector Basket/Projector Basket Installed 2.png"
     alt: "Projector Basket Installed"
     caption: "Projector basket installed"
 ---
